@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+        "ModuleTitle": {
+            "type": "string",
+            "title": "Module Title"
+        },
+        "Columns": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {                   
+                    "Image": {
+                        "type": "string",
+                        "title": "Image"
+                    },
+                    "Title": {
+                        "type": "string",
+                        "title": "Title"
+                    },
+                    "Designation": {
+                        "type": "string",
+                        "title": "Designation"
+                    },
+                    "Description": {
+                        "type": "string",
+                        "title": "Description"
+                    },
+                    "FaceBookLinkUrl": {
+                        "type": "string",
+                        "title": "Link Url"
+                    },
+                    "FaceBookLinkNewWindow": {
+                        "type": "boolean"
+                    },
+                    "TwitterLinkUrl": {
+                        "type": "string",
+                        "title": "Link Url"
+                    },
+                    "TwitterLinkNewWindow": {
+                        "type": "boolean"
+                    },
+                    "LinkedInLinkUrl": {
+                        "type": "string",
+                        "title": "Link Url"
+                    },
+                    "LinkedInLinkNewWindow": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        }
+    }
+}

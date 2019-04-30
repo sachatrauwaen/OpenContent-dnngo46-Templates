@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Boxes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          },
+		  "Percentage": {
+            "type": "string",
+            "title": "Percentage"
+          },          		
+		  "Evaluation": {
+            "type": "string",
+            "title": "Evaluation"
+          },
+		  "EvaluationCount": {
+            "type": "string",
+            "title": "Evaluation Count"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<div class="timeline02_year clearfix">
+  <div class="Time_Line02_top">
+    <div class="Time_Line02_top_time">
+      <div class="timline02_year_top">{{formatDateTime publishstartdate "DD"}}</div>
+      <div class="timline02_year_bottom">{{formatDateTime publishstartdate "MMMM"}}</div>
+    </div>
+  </div>
+  <div class="Time_Line02_left">
+    <div class="Time_Line02_leftmain leftmain_02">
+      <h3>{{Title}}</h3>
+      <p>{{Summary}}</p>
+      {{>social}}
+      <a href="{{Context.DetailUrl}}" class="timeline_bnt">Lire cet article</a> </div>
+  </div>
+  <div class="Time_Line02_right">
+    <div class="Time_Line02_rightmain">
+      <div class="photo_box shade_zoom"> 
+        {{#if Video}}
+        <a href="{{Video}}" class="LightBox_youtube">
+          <div class="pic_box"> <img alt="" class="img-responsive" src="{{Image}}" />
+            <div class="ico"> <span class="glyphicons glyph-play"></span> </div>
+            <div class="shade"></div>
+          </div>
+        </a>
+        {{else}}
+        <a href="{{Image}}" class="LightBox_image" >
+          <div class="pic_box"> 
+            <img alt="" class="img-responsive" src="{{Image}}" />
+            <div class="ico"> <span class="glyphicons glyph-picture"></span> </div>
+            <div class="shade"></div>
+          </div>
+        </a>
+        {{/if}} 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Time_Line02_line"></div>

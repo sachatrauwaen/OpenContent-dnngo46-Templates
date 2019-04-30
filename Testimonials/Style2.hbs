@@ -1,0 +1,27 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+	<div class="Testimonials_2main">
+		<h3>What Others Say About Us ?</h3>
+		<div class="row Testimonials">
+			{{#each Columns}}
+			<div class="col-sm-6">
+				<ul data-display-navigation="false" data-position="fade" data-display-arrows="false" data-autoplay="0" class="Testimonials_tab Testimonials_2" >
+					<li>
+						<div class="Pic">
+							<img alt="{{Title}}" src="{{Image}}"/>
+						</div>
+						<blockquote>
+							<p>{{Description}}</p>
+							<small>
+								<span>{{Name}}</span>
+							</small>
+						</blockquote>
+					</li>
+				</ul> 
+				<div class="Testimonials_2center">
+					<div class="line"></div>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+</div>

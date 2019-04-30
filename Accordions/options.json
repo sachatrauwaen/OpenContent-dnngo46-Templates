@@ -1,0 +1,25 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Panels": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "textarea"
+          },
+		  "Icon": {
+			"type": "icon",
+			"glyphicons" : true,
+			"fontawesome" : false 
+		  }		  
+        }
+      }
+    }
+  }
+}

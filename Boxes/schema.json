@@ -1,0 +1,31 @@
+﻿{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },       	  
+  "Title": {
+	"type": "string",
+	"title": "Title"
+  },
+  "Description": {
+	"type": "string",
+	"title": "Description"
+  },
+  "LinkUrl": {
+	"type": "string",
+	"title": "More Info Link"
+  },
+    "LinkText": {
+	"type": "string",
+	"title": "Link Text"
+  },
+   "LinkNewWindow": {
+	"type": "boolean",
+	"title": "New Window"
+  }
+  }
+}
+
+

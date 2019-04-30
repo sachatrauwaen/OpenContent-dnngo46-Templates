@@ -1,0 +1,33 @@
+﻿{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "title": "Name"
+          },
+		  "Year": {
+            "type": "string",
+            "title": "Year"
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          },
+		  "Image": {
+            "type": "string",
+            "title": "Image"
+          } 	
+        }
+      }
+    }
+  }
+}

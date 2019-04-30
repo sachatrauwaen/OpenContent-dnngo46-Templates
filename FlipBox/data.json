@@ -1,0 +1,40 @@
+{
+  "Columns": [
+    {
+      "Title": "Flip Box 1",
+      "Description": "Mauris at ultricies eros. Morbi vel dui nec arcu suscipit euismod. Phasellus pellentes untque lectus eget lac in venenatis tellus ligulas ipsum, euismod atras vulputate iltricies etri elit.",
+      "BoxIcon": "glyphicons glyph-ring",
+      "BoxRotation": "flip_right",
+      "LinkOption": false
+    },
+    {
+      "Title": "Flip Box 2",
+      "Description": "Mauris at ultricies eros. Morbi vel dui nec arcu suscipit euismod. Phasellus pellentes untque lectus eget lac in venenatis tellus ligulas ipsum, euismod atras vulputate iltricies etri elit.",
+      "BoxIcon": "glyphicons glyph-redo",
+      "LinkOption": true,
+      "LinkUrl": "http://demo7.dnngo.net/20064/en-us/features/shortcodes/flipbox.aspx",
+      "LinkText": "Read More",
+      "LinkNewWindow": true
+    },
+    {
+      "Title": "Flip Box 3",
+      "Description": "Mauris at ultricies eros. Morbi vel dui nec arcu suscipit euismod. Phasellus pellentes untque lectus eget lac in venenatis tellus ligulas ipsum, euismod atras vulputate iltricies etri elit.",
+      "BoxIcon": "glyphicons glyph-cardio",
+      "BoxRotation": "flip_bottom",
+      "LinkOption": true,
+      "LinkUrl": "http://demo7.dnngo.net/20064/en-us/features/shortcodes/flipbox.aspx",
+      "LinkText": "Read More",
+      "LinkNewWindow": true
+    },
+    {
+      "Title": "Flip Box 4",
+      "Description": "Mauris at ultricies eros. Morbi vel dui nec arcu suscipit euismod. Phasellus pellentes untque lectus eget lac in venenatis tellus ligulas ipsum, euismod atras vulputate iltricies etri elit.",
+      "BoxIcon": "glyphicons glyph-bomb",
+      "BoxRotation": "flip_top",
+      "LinkOption": true,
+      "LinkUrl": "http://demo7.dnngo.net/20064/en-us/features/shortcodes/flipbox.aspx",
+      "LinkText": "Read More",
+      "LinkNewWindow": true
+    }
+  ]
+}

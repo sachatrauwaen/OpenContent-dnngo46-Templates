@@ -1,0 +1,24 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="loaded_list3 row">
+	{{#each Boxes}}
+    <div class="col-sm-6">
+        <div class="pane_layout">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="progress progress-striped active">
+                        <div data-height="{{Percentage}}%" class="bar animation animationwidth"><span></span></div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="progress_rightbox">
+                        <h3>{{Title}}</h3>
+                        <div class="line"></div>
+                        <p>{{Description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	{{/each}}
+</div>
+</div>

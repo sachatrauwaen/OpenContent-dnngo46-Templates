@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Tabs": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+		  "Icon": {
+			"type": "icon",
+			"glyphicons" : true,
+			"fontawesome" : false 
+		  },
+          "Description": {
+            "type": "textarea"
+          },
+		   "LinkOption": {
+			"type": "checkbox"
+		  },	
+		   "LinkNewWindow": {
+			"type": "checkbox"
+		  }
+        }
+      }
+    }
+  }
+}

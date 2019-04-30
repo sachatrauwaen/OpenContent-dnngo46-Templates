@@ -1,0 +1,15 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="OurSkill"><span>Our Skill</span></div>
+<div class="row">
+    {{#each Boxes}}
+    <div class="col-sm-6 loaded_list2">
+        <p>{{Title}}</p>
+        <div class="progressborder">
+            <div class="progress progress-striped active">
+                <div class="bar animation animationwidth animated" data-width="{{Percentage}}%" style="width: {{Percentage}}%;"><span>{{Percentage}}%</span> </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+</div>

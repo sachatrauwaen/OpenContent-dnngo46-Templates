@@ -1,0 +1,60 @@
+﻿{
+  "type": "object",
+  "properties": {
+  
+    "Items": {
+      "type": "string",
+      "title": "Items"   
+    },
+	"BoxRotation": {
+		"title": "Box Rotation",
+		"type": "string",
+		"enum": [ "", "flip_right", "flip_top", "flip_bottom" ],
+		"required": true
+	},	
+	"autoplay": {
+      "type": "boolean",
+      "title": "Auto-Play"   
+    },
+	"pagination": {
+      "type": "boolean",
+      "title": "Pagination"   
+    },
+    "autoheight": {
+	  "type": "boolean",
+	  "title": "Auto-height"
+	},
+	"navigation": {
+      "type": "boolean",
+      "title": "Navigation"   
+    },
+    "TopPadding": {
+      "type": "string",
+      "title": "Top Padding",
+      "enum": [
+        "pt-10",
+        "pt-20",
+		"pt-30",
+        "pt-40",
+        "pt-50",
+        "pt60"
+      ]
+    },
+    "BottomPadding": {
+      "type": "string",
+      "title": "Bottom Padding",
+      "enum": [
+        "pb-10",
+		"pb-20",
+		"pb-30",
+        "pb-40",
+		"pb-50",
+        "pb60"
+      ]
+    },
+    "CssClass": {
+      "type": "string",
+      "title": "Css Class"
+    }
+  }
+}

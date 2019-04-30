@@ -1,0 +1,15 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+	<div>
+    {{#each Boxes}}
+	<div class="col-sm-6">
+		<div class="cono">
+			<div class="sector" data-fan="name1:AccentColour:{{Percentage}}% " data-color="#eeeeee" data-size="35" data-name="false"><canvas width="70" height="70"></canvas><div class="sector_info"><div class="item0"><span>{{Percentage}}</span>%</div></div></div>
+			<h3>{{Title}}</h3>
+			<div class="line"></div>
+			<p>{{Description}}</p>
+		</div>
+	</div>
+    {{/each}}
+	</div>
+</div>
+

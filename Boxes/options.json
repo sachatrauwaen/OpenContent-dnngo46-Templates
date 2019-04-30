@@ -1,0 +1,24 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },	
+  "Title": {
+    "type": "text"
+  },
+  "Description": {
+    "type": "textarea"
+  },
+  "LinkUrl": {
+    "type": "url"
+  },
+   "LinkText": {
+    "type": "text"
+  },
+   "LinkNewWindow": {
+    "type": "checkbox"
+  }
+}      
+}
+ 
+       

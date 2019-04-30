@@ -1,0 +1,56 @@
+<div class="isotope_grid List_layouts">
+  <div class="isotope_group portfolios_group"> 
+    <a data-filter="*" href="#" class="active">All</a> / 
+  {{#each AdditionalData.Categories}}
+    <a data-filter=".{{Id}}" href="#" >{{Title}}</a>{{#if @last}} {{else}} / {{/if}} 
+    {{/each}}
+  </div>
+
+  <div data-min-width="1130" class="isotope_main">
+      	{{#each Items}}
+      <div class="isotope_item {{#each Category}}{{Id}}{{/each}} ">
+        
+        	{{#if Context.IsEditable}}
+            <div style="outline: 1px dashed #ccc;height: 22px !important;position:relative;margin-top:1px;">
+              <ul class="dnn_mact" style="position: absolute;right:0;top:0; ">
+                <li class="actionMenuEdit">
+                  <a href="{{Context.EditUrl}}" title="Edit Item"></a>
+                </li>
+              </ul>
+            </div>
+            {{/if}}
+            
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="photo_box img_zoom">
+						<a href="#">
+							<div class="pic_box">
+								<img alt="" src="{{Image}}" class="img-responsive">
+								<div class="ico"> <span class="glyphicons glyph-search"></span> </div>
+								<div class="shade"></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="List_layouts_text">
+						<div class="text_style3">
+						<h3>{{Title}}</h3>
+						<div>
+						{{#each Category}}
+							{{arraytranslate ../../Schema.properties.Category.enum ../../Options.fields.Category.optionLabels this }} {{#if @last}} {{else }}, {{/if}}
+						{{/each}}
+                          {{#each Category}}{{Title}}{{/each}} {{#unless @last}}, {{/unless}}
+						</div>
+						</div>
+						<hr>
+						<p>{{Description}}</p>
+						<p><a class="Button_default portfolios_default_btn" href="{{Context.DetailUrl}}" >Detail</a></p>
+					</div>
+				</div>
+			</div>
+							
+        </div>
+        {{/each}}
+    </div>
+</div>

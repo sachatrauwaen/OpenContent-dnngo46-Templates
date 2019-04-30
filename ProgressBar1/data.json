@@ -1,0 +1,40 @@
+{
+  "Boxes": [
+    {
+      "Title": "Web Design",
+      "Description": "Sed non neque elit. Sed ut imperdiet nisi. Proin condime ntum fermentum nunc. Etiam pharetra, erat sed ferm entum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Sed non neque elit. Sed ut imperdiet nisi. Proin condimetum nunc. Etiam pharetra, erat sed ferm fermentum nunc. Etiam pharetra, erat velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+      "Percentage": "22",
+      "Image": "fa fa-android",
+      "BasicIcon1": "glyphicons glyph-globe-af",
+      "Evaluation": "Customers Like Our Products",
+      "EvaluationCount": "2288"
+    },
+    {
+      "Title": "HTML5 & CSS3",
+      "Description": "Sed non neque elit. Sed ut imperdiet nisi. Proin condime ntum fermentum nunc. Etiam pharetra, erat sed ferm entum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Sed non neque elit. Sed ut imperdiet nisi. Proin condimetum nunc. Etiam pharetra, erat sed ferm fermentum nunc. Etiam pharetra, erat velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+      "Percentage": "99",
+      "Image": "fa fa-user",
+      "BasicIcon1": "glyphicons glyph-user",
+      "Evaluation": "Followers On Marketplace",
+      "EvaluationCount": "13280"
+    },
+    {
+      "Title": "JQuery",
+      "Description": "Sed non neque elit. Sed ut imperdiet nisi. Proin condime ntum fermentum nunc. Etiam pharetra, erat sed ferm entum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Sed non neque elit. Sed ut imperdiet nisi. Proin condimetum nunc. Etiam pharetra, erat sed ferm fermentum nunc. Etiam pharetra, erat velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+      "Percentage": "87",
+      "Image": "fa fa-bookmark",
+      "BasicIcon1": "glyphicons glyph-ipad",
+      "Evaluation": "Reviews On DNN Store",
+      "EvaluationCount": "9400"
+    },
+    {
+      "Title": "DNN",
+      "Description": "Sed non neque elit. Sed ut imperdiet nisi. Proin condime ntum fermentum nunc. Etiam pharetra, erat sed ferm entum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Sed non neque elit. Sed ut imperdiet nisi. Proin condimetum nunc. Etiam pharetra, erat sed ferm fermentum nunc. Etiam pharetra, erat velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+      "Percentage": "12",
+      "Image": "fa fa-facebook-square",
+      "BasicIcon1": "glyphicons glyph-money",
+      "Evaluation": "FaceBook User On this page",
+      "EvaluationCount": "180"
+    }
+  ]
+}

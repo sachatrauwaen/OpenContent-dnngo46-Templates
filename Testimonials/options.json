@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "fields": {	  
+          "Image": {
+            "type": "image"
+          },        
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "textarea"
+          },
+          "Name": {
+            "type": "text"
+          }         
+        }
+      }
+    }
+  }
+}

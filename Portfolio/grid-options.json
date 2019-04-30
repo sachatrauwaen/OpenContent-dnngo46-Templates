@@ -1,0 +1,9 @@
+{
+    "fields": {
+       "Columns":{
+        "type":"select",
+        "optionLabels":["2","3","4"]
+      
+      }
+    }
+}

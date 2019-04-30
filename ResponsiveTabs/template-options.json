@@ -1,0 +1,41 @@
+﻿{
+  "fields": {   
+	"Style": {
+      "type": "select",
+	
+      "optionLabels": [
+        "Style 1",
+        "Style 2",
+        "Style 3",
+		"Style 4",
+        "Style 5"
+      ]
+    },
+    "TopPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "BottomPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "CssClass": {
+      "type": "text",
+      "helper": "Container Css Class"
+    }
+  }
+}

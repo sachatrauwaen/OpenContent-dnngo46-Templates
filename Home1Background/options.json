@@ -1,0 +1,10 @@
+{
+  "fields": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "wysihtml"
+    }
+  }
+}

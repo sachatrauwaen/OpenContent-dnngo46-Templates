@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+		  "Sub Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "textarea"
+          },		 
+		  "VideoURL": {
+            "type": "url"
+          },
+		  "Style": {
+			  "type": "select",
+			  "removeDefaultNone":true,
+			  "optionLabels": [
+				"White",
+				"Black"
+			 ]
+		  },    
+		  "LinkOption": {
+			"type": "checkbox"
+		  },
+		  "LinkUrl": {
+			"type": "url"
+		  },
+		   "LinkText": {
+			"type": "text"
+		  },
+		   "LinkNewWindow": {
+			"type": "checkbox"
+		  },
+		   "LinkOption2": {
+			"type": "checkbox"
+		  },
+		  "LinkUrl2": {
+			"type": "url"
+		  },
+		   "LinkText2": {
+			"type": "text"
+		  },
+		   "LinkNewWindow2": {
+			"type": "checkbox"
+		  }
+        }
+      }
+    }
+  }
+}

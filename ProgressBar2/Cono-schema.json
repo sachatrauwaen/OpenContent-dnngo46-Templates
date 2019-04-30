@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {        
+        "Style": {
+			"title": "Backgroud Style",
+			"type": "string",
+			"required":true,
+			"enum": ["SectionStyles1","SectionStyles8", "SectionStyles3", "SectionStyles4", "SectionStyles5", "SectionStyles6","SectionStyles7" ]
+		},
+		
+		"TopPadding": {
+		  "type": "string",
+		  "title": "Top Padding",
+		  "enum": [
+			"pt-10",
+			"pt-20",
+			"pt-30",
+			"pt-40",
+			"pt-50",
+			"pt60"
+		  ]
+		},
+		"BottomPadding": {
+		  "type": "string",
+		  "title": "Bottom Padding",
+		  "enum": [
+			"pb-10",
+			"pb-20",
+			"pb-30",
+			"pb-40",
+			"pb-50",
+			"pb60"
+		  ]
+		},
+		"CssClass": {
+		  "type": "string",
+		  "title": "Css Class"
+		}
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "Columns": {
+      "type": "string",
+      "title": "Columns",
+      "enum": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    "EqualHeight": {
+      "type": "boolean"
+    }
+  }
+}

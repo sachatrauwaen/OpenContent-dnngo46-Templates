@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "show": {
+      "type": "checkbox",
+      "label": "Show Description"
+    }
+  }
+}

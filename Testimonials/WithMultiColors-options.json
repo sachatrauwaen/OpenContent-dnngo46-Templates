@@ -1,0 +1,38 @@
+{
+  "fields": {
+    "Style": {
+      "type": "select",
+      "optionLabels": [
+        "White",
+        "Grey",
+        "Green"
+      ]
+    },
+    "TopPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "BottomPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "CssClass": {
+      "type": "text",
+      "helper": "Container Css Class"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<div class="oc-testimonials {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="row">
+  <div class="col-sm-3">
+    <div class="Testimonials_1left"></div>
+  </div>
+  <div class="col-sm-9">
+    <ul data-autoplay="3000" data-display-arrows="false" data-position="fade" class="Testimonials_tab Testimonials_1">
+      {{#each Columns}}
+      <li>
+        <blockquote>
+          <h3>{{Title}}</h3>
+          <p>{{Description}}</p>
+          <small>
+            <img alt="{{Title}}" src="{{Image}}" />
+            <span>{{Name}}</span>
+          </small>
+        </blockquote>
+      </li>
+      {{/each}}          -
+    </ul>
+  </div>
+</div>
+</div>

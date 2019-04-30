@@ -1,0 +1,47 @@
+{
+    "fields": {
+        "ModuleTitle": {
+            "type": "text"
+        },
+        "Columns": {
+            "type": "array",
+            "items": {
+                "fields": {                    
+                    "Image": {
+                        "type": "image"
+                    },
+                    "Title": {
+                        "type": "text"
+                    },
+                    "Designation": {
+                        "type": "text"
+                    },
+                    "Description": {
+                        "type": "textarea"
+                    },
+                    "FaceBookLinkUrl": {
+                        "type": "text"
+                    },
+                    "FaceBookLinkNewWindow": {
+                        "type": "checkbox",
+                        "label": "Open Facebook Link in new window"
+                    },
+                    "TwitterLinkUrl": {
+                        "type": "text"
+                    },
+                    "TwitterLinkNewWindow": {
+                        "type": "checkbox",
+                        "label": "Open Twitter Link in new window"
+                    },
+                    "LinkedInLinkUrl": {
+                        "type": "text"
+                    },
+                    "LinkedInLinkNewWindow": {
+                        "type": "checkbox",
+                        "label": "Open LinkedIn Link in new window"
+                    }
+                }
+            }
+        }
+    }
+}

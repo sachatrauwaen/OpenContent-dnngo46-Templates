@@ -1,0 +1,119 @@
+{
+    "editWitoutPostback": true,
+    "editRole": "",
+    "Index": true, /* required for search */
+    "detailMetaTitle": "{{#if Seo.MetaTitle}}{{Seo.MetaTitle}}{{else}}{{Title}}{{/if}}",
+    "detailMetaDescription": "{{#if Seo.MetaDescription}}{{Seo.MetaDescription}}{{else}}{{Description}}{{/if}}",
+    "detailUrl": "{{Category.Title}}-{{#if Seo.Slug}}{{Seo.Slug}}{{else}}{{Title}}{{/if}}",
+    "detailMeta": "{{#if Image}}<meta property=\"og:image\" content=\"{{Image}}\" />{{/if}}<meta property=\"og:type\" content=\"article\" />",
+    "templates": {
+        "template": {
+            "type": "multiple", /* single or multiple*/
+            "title": "List",
+            "clientSideData": true, /*  */
+            "main": {
+                "template": "template.hbs",
+                "partialTemplates": {
+                    "item": {
+                        "template": "item.hbs",
+                        "clientside": true
+                    }
+                },
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,
+                "additionalDataInTemplate": true
+            },
+            "detail": {
+                "template": "detail.hbs",
+                "partialTemplates": {
+                    "flexslider": {
+                        "template": "flexslider.hbs"
+                    },
+                     "flexcarousel": {
+                        "template": "flexcarousel.hbs"
+                    }
+                },
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,
+                "additionalDataInTemplate": true
+            }
+
+        },
+        "categorylist": {
+            "type": "multiple", /* single or multiple*/
+            "title": "Categories",
+            "main": {
+                "template": "categorylist.hbs",
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,
+                "dataInTemplate": false,
+                "additionalDataInTemplate": true
+            }
+        },
+        "latest": {
+            "type": "multiple", /* single or multiple*/
+            "title": "Latests",
+            "main": {
+                "template": "latest.hbs",
+               "additionalDataInTemplate": true
+            }
+        },
+		 "timeline": {
+		  "type": "multiple",
+		  "title": "timeline",
+		  "clientSideData": true,
+		  "main": {
+			"template": "timeline.hbs",
+			"partialTemplates": {
+			  "item": {
+				"template": "timeline-item.hbs",
+				"clientside": true
+			  },
+			  "social": {
+				"template": "social.hbs",
+				"clientside": true
+			  }
+			},
+			"schemaInTemplate": true,
+			"optionsInTemplate": true,
+			"additionalDataInTemplate": true
+		  },
+		  "detail": {
+			"template": "detail.hbs",
+			"partialTemplates": {
+			  "flexslider": {
+				"template": "flexslider.hbs"
+			  },
+			  "flexcarousel": {
+				"template": "flexcarousel.hbs"
+			  },
+			  "detail-social": {
+				"template": "detail-social.hbs"
+			  }
+			},
+			"schemaInTemplate": true,
+			"optionsInTemplate": true,
+			"additionalDataInTemplate": true
+		  }
+		}
+    },
+    "additionalData": {
+        "Intro": {
+            "title": "Introduction",
+            "scope": "tabmodule", /* tabmodule, module, tab, portal */
+            "storageKey": "intro",
+            "modelKey": "intro",
+            "templateFolder": ""
+        },
+        "Categories": {
+            "title": "Categories",
+            "storageKey": "Categories",
+            "modelKey": "Categories"
+        },
+        "Tags": {
+            "title": "Tags",
+            "storageKey": "Tags",
+            "modelKey": "Tags"
+        }
+    }
+}

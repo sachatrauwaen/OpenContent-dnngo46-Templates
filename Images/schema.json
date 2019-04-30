@@ -1,0 +1,89 @@
+{
+    "type": "object",
+    "properties": {
+        "ModuleTitle": {
+            "type": "string",
+            "title": "Module Title"
+        },
+        "Columns": {
+            "type": "array",
+            "items": {
+                "minItems": 1,
+                "maxItems": 3,
+                "type": "object",
+                "properties": {
+                    "Image": {
+                        "type": "string",
+                        "title": "Image"
+                    },
+                    "LinkUrl": {
+                        "type": "string",
+                        "title": "Link Url"
+                    },
+                    "LinkNewWindow": {
+                        "type": "boolean",
+						"title":"Open Link in New Window"
+                    },                                  
+                  
+                    "PhotoIcon1": {
+                        "type": "string",
+                        "title": "Icon 1"
+                    },
+                    "LinkUrlPhotoIcon1": {
+                        "type": "string",
+                        "title": "Icon 1 Link Url"
+                    },
+                    "LinkNewWindowPhotoIcon1": {
+                        "type": "boolean",
+						"title": "Open Link in new window"
+                    },
+                    "PhotoIcon2": {
+                        "type": "string",
+                        "title": "Icon 2"
+                    },
+                    "LinkUrlPhotoIcon2": {
+                        "type": "string",
+                        "title": "Icon 2 Link Url"
+                        
+                    },
+                    "LinkNewWindowPhotoIcon2": {
+                        "type": "boolean",
+						"title": "Open Link in new window"
+                    },
+                   
+                    "Title": {
+                        "type": "string",
+                        "title": "Title"
+                    },
+                   
+                    "Description": {
+                        "type": "string",
+                        "title": "Description"
+                    },
+					 "ButtonUrl": {
+                        "type": "string",
+                        "title": "Button Url"
+                    },
+                    "ButtonNewWindow": {
+                        "type": "boolean",
+						"title":"Open Link in New Window"
+                    },                                  
+                    "ButtonText": {
+                        "type": "string",
+                        "title": "Button Text"
+                    },
+                    "LinkTextStyle": {
+                        "type": "string",
+                        "title": "LinkTextStyle",
+                        "enum": [
+                            "increment_1",
+                            "increment_2",
+                            "increment_3",
+                            "increment_4"
+                        ]
+                    }                  
+                }
+            }
+        }
+    }
+}

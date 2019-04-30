@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          },
+		  "BoxIcon": {
+            "title": "Box Icon",
+            "type": "string",
+            "enum": ["glyphicons glyph-microphone","glyphicons glyph-bomb","glyphicons glyph-ring","glyphicons glyph-drink","glyphicons glyph-table-tennis","glyphicons glyph-settings","glyphicons glyph-redo","glyphicons glyph-cardio","glyphicons glyph-user", "glyphicons glyph-wifi", "glyphicons glyph-database-lock", "glyphicons glyph-database-plus","glyphicons glyph-imac","glyphicons glyph-macbook","glyphicons glyph-ipad","glyphicons glyph-iphone","glyphicons glyph-server" ,"glyphicons glyph-money" ,"glyphicons glyph-cloud-plus" ,"glyphicons glyph-globe-af" ,"glyphicons glyph-flag","glyphicons glyph-credit-card"  ]
+		  },
+		  "BoxRotation": {
+            "title": "Box Rotation",
+            "type": "string",
+            "enum": ["","flip_right","flip_top","flip_bottom"]
+		  },
+		  "LinkOption": {
+			"type": "boolean",
+			"title": "If You want to have Read More link!",
+		  },
+		   "LinkUrl": {
+			"type": "string",
+			"title": "More Info Link",
+			"dependencies": ["LinkOption"]
+		  },
+			"LinkText": {
+			"type": "string",
+			"title": "Link Text",
+			"dependencies": ["LinkOption"]
+		  },
+		   "LinkNewWindow": {
+			"type": "boolean",
+			"title": "New Window",
+			"dependencies": ["LinkOption"]
+		  }
+        }
+      }
+    }
+  }
+}

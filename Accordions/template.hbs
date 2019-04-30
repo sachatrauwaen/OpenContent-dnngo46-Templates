@@ -1,0 +1,19 @@
+<div class="oc-accordions {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+	<div class="panel-group {{Settings.Style}}" id="accordion{{@root.Context.ModuleId}}">
+		{{#each Panels}}
+		<div class="panel panel-default">
+			<div class="panel-heading">
+			  <h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion{{@root.Context.ModuleId}}" href="#collapse{{@root.Context.ModuleId}}_{{@index}}">
+				  <em class="{{Icon}}"></em>
+				  <span class="accordion_icon"></span>{{Title}}
+				</a>
+			  </h4>
+			</div>
+			<div id="collapse{{@root.Context.ModuleId}}_{{@index}}" class="panel-collapse collapse {{#if @first}}in{{/if}}">
+			  <div class="panel-body">{{Description}}</div>
+			</div>
+		</div>
+		{{/each}}
+	</div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {         
+          "Description": {
+            "type": "string",
+            "title": "Video Code From Website"
+          }	 
+        }
+      }
+    }
+  }
+}
+
+
+  

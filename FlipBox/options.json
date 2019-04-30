@@ -1,0 +1,44 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "textarea"
+          },
+		  "BoxIcon": {
+			"type": "icon",		
+			"glyphicons": true,
+			"fontawesome": false,
+			 "optionLabels": ["Microphone","Bomb","Ring","Drink","Table Tennis","Settings","Redo","Cardio","User","Wifi","Database Lock","Database Plus","IMac","MacBook","Ipad","Iphone","Server","Money","Cloud","Global","Flag","Credit Card"],		
+			"removeDefaultNone":true
+		  },
+		   "BoxRotation": {
+			"type": "select",		
+			 "optionLabels": ["Left","Right","Top","Bottom"],		
+			"removeDefaultNone":true
+		  }, 
+		  "LinkOption": {
+			"type": "checkbox"
+		  },
+		  "LinkUrl": {
+			"type": "url"
+		  },
+		   "LinkText": {
+			"type": "text"
+		  },
+		   "LinkNewWindow": {
+			"type": "checkbox"
+		  }
+        }
+      }
+    }
+  }
+}

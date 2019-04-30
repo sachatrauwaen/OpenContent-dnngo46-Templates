@@ -1,0 +1,56 @@
+{
+  "formfields": [
+    {
+      "fieldname": "title",
+      "title": "Title",
+      "fieldtype": "text",
+      "advanced": false
+    },
+    {
+      "fieldname": "description",
+      "title": "Description",
+      "fieldtype": "textarea",
+      "advanced": false
+    },
+    {
+      "fieldname": "Image",
+      "title": "Image",
+      "fieldtype": "image",
+      "imageoptions": {},
+      "advanced": false
+    },
+    {
+      "fieldname": "Items",
+      "title": "List Items",
+      "fieldtype": "table",
+      "subfields": [
+        {
+          "fieldname": "Title",
+          "title": "Title",
+          "fieldtype": "text",
+          "advanced": false
+        },
+        {
+          "fieldname": "Description",
+          "title": "Description",
+          "fieldtype": "text",
+          "advanced": false
+        }
+      ],
+      "advanced": false
+    },
+    {
+      "fieldname": "LinkUrl",
+      "title": "Link Url",
+      "fieldtype": "url",
+      "advanced": false
+    },
+    {
+      "fieldname": "LinkText",
+      "title": "Link Text",
+      "fieldtype": "text",
+      "advanced": false
+    }
+  ],
+  "formtype": "object"
+}

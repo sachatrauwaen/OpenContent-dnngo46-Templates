@@ -1,0 +1,32 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="topb pt40 row">
+    <div class="topbout col-sm-12">
+        <div class="flip_box flip_top flip_box_1 animation scaleUp">
+            <div class="rotate">
+                <div class="front">
+                    <div class="topbout_ico"><span class="glyphicons glyph-edit"></span></div>
+                </div>
+                <div class="back">
+                    <div class="topbout_ico"><span class="glyphicons glyph-embed-close"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="topbline col-sm-12">
+        <div class="topbline1">
+            <div class="topbline2"></div>
+        </div>
+    </div>
+  	{{#each Columns}}
+    <div class="col-md-3 col-sm-6">
+      <div class="topbbox{{add @index 1}}">
+            <div class="topbline{{#if @first}}3{{else}}{{#if @last}}3{{else}}4{{/if}}{{/if}}"></div>
+            <div class="topbbox_ico animation periodic{{add @index 1}}"><span class="{{Icon}}"></span></div>
+        	<h3>{{Title}}</h3>
+        	<p>{{Description}}</p>
+        	<a href="{{LinkUrl}}" {{#if LinkNewWindow}}target="_blank"{{/if}}>{{LinkText}}</a>
+        </div>
+    </div>
+  	{{/each}}  
+</div>
+</div>

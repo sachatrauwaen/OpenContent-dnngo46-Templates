@@ -1,0 +1,22 @@
+{
+  "Tabs": [
+    {
+      "Title": "First tab",
+      "Icon": "glyphicons glyph-glass",
+      "Description": "Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum. sed diam non umy.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rem excepturi odio veritatis modi non possimus sapiente aspernatur officia eligendi recusandae consequatur enim aut! Amet consequuntur dolorem perspiciatis debitis earum vitae! Nam sollicitudin pretium magna sit amet tincidunt.",
+      "LinkOption": false
+    },
+    {
+      "Title": "Second tab",
+      "Icon": "glyphicons glyph-car",
+      "Description": "Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum. sed diam non umy.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rem excepturi odio veritatis modi non possimus sapiente aspernatur officia eligendi recusandae consequatur enim aut! Amet consequuntur dolorem perspiciatis debitis earum vitae! Nam sollicitudin pretium magna sit amet tincidunt.",
+      "LinkOption": false
+    },
+    {
+      "Title": "Third tab",
+      "Icon": "glyphicons glyph-envelope",
+      "Description": "Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum. sed diam non umy.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rem excepturi odio veritatis modi non possimus sapiente aspernatur officia eligendi recusandae consequatur enim aut! Amet consequuntur dolorem perspiciatis debitis earum vitae! Nam sollicitudin pretium magna sit amet tincidunt.",
+      "LinkOption": false
+    }
+  ]
+}

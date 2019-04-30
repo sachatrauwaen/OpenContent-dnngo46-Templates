@@ -1,0 +1,68 @@
+{
+    "fields": {
+        "ModuleTitle": {
+            "type": "text"
+        },
+        "Columns": {
+            "type": "array",
+            "items": {
+                "fields": {
+                    "Title": {
+                        "type": "text"
+                    },
+                    "Title2": {
+                        "type": "text"
+                    },
+                    "Description": {
+                        "type": "textarea"
+                    },
+                    "Price": {
+                        "type": "text",
+                        "maskString": "$#,###.00"
+                    },
+                  
+                    "Icon1": {
+                        "type": "icon",
+                        "glyphicons": true,
+                        "fontawesome": false
+                    },
+                    "Icon2": {
+                        "type": "icon",
+                        "glyphicons": true,
+                        "fontawesome": false
+                    },
+                    "Icon3": {
+                        "type": "icon",
+                        "glyphicons": true,
+                        "fontawesome": false
+                    },
+                    "Icon4": {
+                        "type": "icon",
+                        "glyphicons": true,
+                        "fontawesome": false
+                    },
+                    "Icon5": {
+                        "type": "icon",
+                        "glyphicons": true,
+                        "fontawesome": false
+                    },
+                    "Image": {
+                        "type": "image"
+                    },
+                    "LinkOption": {
+                        "type": "checkbox"
+                    },
+                    "LinkUrl": {
+                        "type": "url"
+                    },
+                    "LinkText": {
+                        "type": "text"
+                    },
+                    "LinkNewWindow": {
+                        "type": "checkbox"
+                    }
+                }
+            }
+        }
+    }
+}

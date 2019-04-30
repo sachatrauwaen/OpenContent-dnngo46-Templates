@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "Title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Icon": {
+            "type": "string",
+            "title": "Icon"
+          },
+          "Title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "LinkText": {
+            "type": "string",
+            "title": "Link Text"
+          },
+          "LinkUrl": {
+            "type": "string",
+            "title": "Link Url"
+          },
+          "LinkNewWindow": {
+            "type": "boolean",
+            "title": "Open Link in new window"
+          }
+        }
+      }
+    }
+  }
+}

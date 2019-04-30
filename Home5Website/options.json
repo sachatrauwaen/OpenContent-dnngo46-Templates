@@ -1,0 +1,34 @@
+{
+  "fields": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "wysihtml"
+    },
+    "Image": {
+      "type": "image"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "text"
+    },
+    "Email": {
+      "type": "text"
+    },
+    "Fax": {
+      "type": "text"
+    },
+    "Contact": {
+      "type": "text"
+    },
+    "LinkUrl": {
+      "type": "url"
+    },
+    "LinkText": {
+      "type": "text"
+    }
+  }
+}

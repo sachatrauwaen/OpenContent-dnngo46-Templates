@@ -1,0 +1,53 @@
+{
+    "fields": {
+        "ModuleTitle": {
+            "type": "text"
+        },
+        "Boxes": {
+            "type": "array",
+            "items": {
+                "fields": {
+                    "FontIcon": {
+                        "type": "icon",
+						"glyphicons": true,
+						"bootstrap": false,
+						"fontawesome": false
+                    },                 
+                    "title": {
+                        "type": "text"
+                    },
+                    "Currency": {
+                        "type": "text"
+                    },                   
+                    "Description": {
+                        "type": "textarea"
+                    },
+                    "Specification1": {
+                        "type": "text"
+                    },
+                    "Specification2": {
+                        "type": "text"
+                    },
+                    "Specification3": {
+                        "type": "text"
+                    },
+                    "Specification4": {
+                        "type": "text"
+                    },
+                    "Specification5": {
+                        "type": "text"
+                    },
+                    "Link": {
+                        "type": "url"
+                    },
+                    "LinkText": {
+                        "type": "text"
+                    },
+                    "LinkNewWindow": {
+                        "type": "checkbox"
+                    }
+                }
+            }
+        }
+    }
+}

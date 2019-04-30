@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Slides": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "wysihtml"
+          },
+          "LinkUrl": {
+            "type": "url"
+          },
+          "LinkText": {
+            "type": "text"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "BoxIcon": {
+            "type": "string",
+            "title": "Icon"
+          },
+          "Image": {
+            "type": "string",
+            "title": "Image"
+          },
+          "Content": {
+            "type": "string",
+            "title": "Lightbox Content",
+            "enum": [
+              "image",
+              "images",
+              "youtube",
+              "vimeo",
+              "map"
+            ],
+            "default": "image",
+            "required": true
+          },         
+          "Images": {
+            "type": "array",
+            "dependencies": [
+              "Content"
+            ],
+            "items": {
+              "type": "object",
+              "properties": {
+                "Title": {
+                  "type": "string",
+                  "title": "Title"
+                },
+                "Image": {
+                  "type": "string",
+                  "title": "Image"
+                }
+              }
+            }
+          },
+          "Url": {
+            "type": "string",
+            "title": "Url",
+            "dependencies": [
+              "Content"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

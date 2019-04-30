@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    
+    "TopPadding": {
+      "type": "string",
+      "title": "Top Padding",
+      "enum": [
+        "pt-10",
+        "pt-20",
+		"pt-30",
+        "pt-40",
+        "pt-50",
+        "pt60"
+      ]
+    },
+    "BottomPadding": {
+      "type": "string",
+      "title": "Bottom Padding",
+      "enum": [
+        "pb-10",
+		"pb-20",
+		"pb-30",
+        "pb-40",
+		"pb-50",
+        "pb60"
+      ]
+    },
+    "CssClass": {
+      "type": "string",
+      "title": "Css Class"
+    }
+  }
+}

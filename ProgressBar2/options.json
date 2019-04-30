@@ -1,0 +1,29 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Boxes": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "textarea"
+          },
+		  "Percentage": {
+            "type": "text"
+          },      	
+		  "Evaluation": {
+            "type": "text", 
+          },
+		  "EvaluationCount": {
+            "type": "text", 
+          }
+        }
+      }
+    }
+  }
+}

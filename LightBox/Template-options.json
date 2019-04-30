@@ -1,0 +1,50 @@
+{
+  "fields": {
+    "Columns": {
+      "type": "select",
+      "optionLabels": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+	  "EffectStyle": {
+		"type": "select",
+		"optionLabels": [
+		  "Zoom-in",
+		  "Newspaper",
+		  "Move-horizontal",
+		  "Move-from-top",
+		  "3d-unfold",
+		  "Zoom-out"
+		]
+	  },
+    "TopPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "BottomPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "CssClass": {
+      "type": "text",
+      "helper": "Container Css Class"
+    }
+  }
+}

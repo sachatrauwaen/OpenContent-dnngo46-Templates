@@ -1,0 +1,13 @@
+{
+  "fields": {
+    "Title": {
+      "type": "text"
+    },
+    "Background": {
+      "type": "image"
+    },
+    "Image": {
+      "type": "image"
+    }
+  }
+}

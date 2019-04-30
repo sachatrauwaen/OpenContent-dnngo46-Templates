@@ -1,0 +1,24 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+	<div class="row">
+	  {{#each Columns}}
+	  <div class="col-sm-{{divide "12" ../Settings.Columns}}">
+		<div class="flip_box {{BoxRotation}} {{../Settings.BoxStyle}}">
+		  <div class="rotate">
+			<div class="front">
+			  <span class="{{BoxIcon}}"></span>
+			  <h3>{{Title}}</h3>
+			  <p>{{Description}}</p>
+			</div>
+			<div class="back">
+			  <h3>Flip Box</h3>
+			  <p>{{Description}}</p>
+			  {{#if LinkOption}}
+			  <a class="but" href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}} >{{LinkText}}</a>
+			  {{/if}}
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  {{/each}}
+	</div>
+</div>

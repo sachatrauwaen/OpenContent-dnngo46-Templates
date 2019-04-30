@@ -1,0 +1,13 @@
+<div class="oc-quotes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="{{Settings.Style}}">
+  {{#if Settings.Divider}}<hr class="{{Settings.DividerStyle}}" />{{/if}}
+  {{#each Columns}}
+  <blockquote>
+    <span class="mark"> &ldquo;</span>
+    <p>{{Description}}</p>
+    <small>{{Name}}</small>
+  </blockquote>
+  {{/each}}
+</div>
+</div>
+

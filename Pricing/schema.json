@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "ModuleTitle": {
+            "type": "string",
+            "title": "Module Title"
+        },
+        "Boxes": {
+            "type": "array",
+            "items": {
+                "minItems": 1,
+                "maxItems": 3,
+                "type": "object",
+                "properties": {
+                    "FontIcon": {
+                        "type": "string",
+                        "title": "Font Icons",
+                        "default": "glyphicons glyph-imac"                      
+                    },                 
+                    "title": {
+                        "type": "string",
+                        "title": "Title"
+                    },
+                    "Currency": {
+                        "type": "string",
+                        "title": "Currency/Price/Unit"
+                    },                  
+                    "Description": {
+                        "type": "string",
+                        "title": "Description"
+                    },
+                    "Specification1": {
+                        "type": "string",
+                        "title": "Specification 1"
+                    },
+                    "Specification2": {
+                        "type": "string",
+                        "title": "Specification 2"
+                    },
+                    "Specification3": {
+                        "type": "string",
+                        "title": "Specification 3"
+                    },
+                    "Specification4": {
+                        "type": "string",
+                        "title": "Specification 4"
+                    },
+                    "Specification5": {
+                        "type": "string",
+                        "title": "Specification 5"
+                    },
+                    "Link": {
+                        "type": "string",
+                        "title": "Link"
+                    },
+                    "LinkText": {
+                        "type": "string",
+                        "title": "Link Text"
+                    },
+                    "LinkNewWindow": {
+                        "type": "boolean",
+                        "title": "New Window"
+                    }
+                }
+            }
+        }
+    }
+}

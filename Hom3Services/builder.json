@@ -1,0 +1,56 @@
+{
+  "formfields": [
+    {
+      "fieldname": "Columns",
+      "fieldtype": "array",
+      "subfields": [
+        {
+          "fieldname": "Title",
+          "title": "Title",
+          "fieldtype": "text",
+          "advanced": false
+        },
+        {
+          "fieldname": "Description",
+          "title": "Description",
+          "fieldtype": "textarea",
+          "advanced": false
+        },
+        {
+          "fieldname": "Items",
+          "title": "List Items",
+          "fieldtype": "table",
+          "subfields": [
+            {
+              "fieldname": "Text",
+              "title": "Text",
+              "fieldtype": "text",
+              "advanced": false
+            }
+          ],
+          "advanced": false
+        },
+        {
+          "fieldname": "LinkText",
+          "title": "Link Text",
+          "fieldtype": "url",
+          "advanced": false
+        },
+        {
+          "fieldname": "LinkUrl",
+          "title": "Link Url",
+          "fieldtype": "text",
+          "advanced": false
+        },
+        {
+          "fieldname": "LinkNewWindow",
+          "title": "Open Link in new window",
+          "fieldtype": "checkbox",
+          "advanced": false
+        }
+      ],
+      "advanced": false
+    }
+  ],
+  "formtype": "object"
+}

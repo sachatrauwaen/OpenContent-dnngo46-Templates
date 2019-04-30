@@ -1,0 +1,40 @@
+{
+    "fields": {
+        "ModuleTitle": {
+            "type": "text"
+        },
+        "Columns": {
+            "type": "array",
+            "items": {
+                "fields": {
+                    "Title": {
+                        "type": "text"
+                    },
+                    "Name": {
+                        "type": "text"
+                    },
+                    "Description": {
+                        "type": "textarea"
+                    },
+                    "BoxIcon": {
+                        "type": "icon",
+                        "glyphicons": true,
+                        "fontawesome": false
+                    },
+                    "LinkOption": {
+                        "type": "checkbox"
+                    },
+                    "LinkUrl": {
+                        "type": "url"
+                    },
+                    "LinkText": {
+                        "type": "text"
+                    },
+                    "LinkNewWindow": {
+                        "type": "checkbox"
+                    }
+                }
+            }
+        }
+    }
+}

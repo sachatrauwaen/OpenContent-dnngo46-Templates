@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "Image": {
+      "type": "string",
+      "title": "Image"
+    },
+    "Address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "Phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "Email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "Fax": {
+      "type": "string",
+      "title": "Fax"
+    },
+    "Contact": {
+      "type": "string",
+      "title": "Contact"
+    },
+    "LinkUrl": {
+      "type": "string",
+      "title": "Link Url"
+    },
+    "LinkText": {
+      "type": "string",
+      "title": "Link Text"
+    }
+  }
+}

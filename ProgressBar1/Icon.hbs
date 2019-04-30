@@ -1,0 +1,14 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="number_Animation row">
+	{{#each Boxes}}
+    <div class="col-sm-{{divide "12" ../Settings.Columns}}"> 
+        <div class="number_Animation_bg">
+            <span class="{{BasicIcon1}}"> </span>
+            <span class="animation  number" data-number="{{EvaluationCount}}">0</span> 
+            <span class="number_name">{{Evaluation}}</span>
+			<hr />
+        </div>
+    </div>
+	{{/each}}
+</div>
+</div>

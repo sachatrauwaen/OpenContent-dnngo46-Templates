@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "Category": {
+      "type": "select2",
+      "dataService": {
+        "action": "LookupData",
+        "data": {
+          "dataKey": "Categories",
+          "valueField": "Id",
+          "textField": "Title"
+        }
+      }
+    },
+    "Title": {
+      "type": "text"
+    },
+    "Summary": {
+      "type": "wysihtml"
+    },
+    "Description": {
+      "type": "wysihtml"
+    },
+    "Image": {
+      "type": "image",
+      "helper": "Url of the image"
+    },
+    "Gallery": {
+      "type": "gallery"
+    },
+    "Documents": {
+      "type": "documents"
+    },
+    "Seo": {
+      "type": "object",
+      "fields": {
+        "Slug": {
+          "type": "text"
+        },
+        "MetaTitle": {
+          "type": "text"
+        },
+        "MetaDescription": {
+          "type": "text"
+        }
+      }
+    },
+    "Featured": {
+      "type": "checkbox"
+    },
+    "publishstatus": {
+      "type": "select",
+      "optionLabels": [
+        "draft",
+        "published"
+      ]
+    }
+  }
+}

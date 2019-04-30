@@ -1,0 +1,17 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "fields": {         
+          "Description": {
+            "type": "textarea"
+          }	 	
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "fields": {
+	
+	 "PhotoBoxStyle": {
+			  "type": "select",
+			  "optionLabels": [
+				"box bottom shadow right",
+				"box bottom shadow left box bottom shadow right",
+				"box bottom shadow",
+				"box dotted padding",
+				"box border padding",
+				"box border",
+				"box border round",
+				"box border radius"
+				
+			  ]
+		 },
+	 "PhotoAnimationStyle": {
+	  "type": "select",
+	  "optionLabels": [
+		"Content zoom with text",
+		"shade zoom",
+		"Entirety bevel",
+		"Entirety left offset",
+		"Content bottom push in 2",
+		"Content bottom push in",
+		"Content push in",
+		"Image flip",
+		"Content top increment",		
+		"Image zoom"
+		]
+	},
+	 "IconStyle": {
+	  "type": "select",
+	  "optionLabels": [
+		"Default Show",
+		"Icon right enter",
+		"Icon Left Enter",
+		"Icon rotate",
+		"Icon Left & Right enter",
+		"Icon tag push",
+		"Icon zoom",
+		"Icon right rotate",
+		"Icon left rotate",
+		"Icon push in",
+		"Icon Top & Bottom enter",
+		"Icon Bottom Enter",
+		"Icon Top Enter"
+		]
+	},
+	 "TextStyle": {
+		"type": "select",
+		"optionLabels": [
+			"With padding",
+			"Grey background",
+			"No padding",
+			"Title underlined"		
+		],
+		"helper":"Text on the bottom of the image"
+	},
+    "TopPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "BottomPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "CssClass": {
+      "type": "text",
+      "helper": "Container Css Class"
+    }
+	
+  }
+}

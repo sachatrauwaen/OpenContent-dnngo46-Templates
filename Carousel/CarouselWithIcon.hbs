@@ -1,0 +1,14 @@
+<div class="oc-carousel {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+	<div class="{{Settings.CarouselStyle}}"  data-items="{{Settings.Items}}" {{#if Settings.navigation}}  data-navigation="true" {{else}} data-navigation="false"{{/if}}  {{#if Settings.pagination}} data-pagination="true" {{else}} data-pagination="false"{{/if}}  {{#if Settings.autoplay}} data-autoplay="true" {{else}} data-autoplay="false"{{/if}} >
+	{{#each Columns}}
+	<div class="item">
+			<div class="ico"><span class="{{BoxIcon}}"></span></div>
+			<h3>{{Title}}</h3>
+			<p>{{Description}}</p>
+	  {{#if LinkOption}}
+	  <a class="Button_normal" href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}} >{{LinkText}}</a>
+	  {{/if}}
+	</div>
+	  {{/each}}
+	</div>
+</div>

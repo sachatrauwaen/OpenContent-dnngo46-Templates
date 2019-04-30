@@ -1,0 +1,15 @@
+{{#if Settings.EqualHeight}}{{registerscript "jquery.matchHeight-min.js"}}{{/if}}
+
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="row">
+  {{#each Columns}}
+  	<div class="col-md-{{divide "12" ../Settings.Columns}} col-sm-{{divide "24" ../Settings.Columns}}" >
+    
+    <div class="home3cona" data-mh="my-group">
+      <h6>{{Title}}<br>{{Title2}}</h6>
+      {{Description}}<span class="{{Icon}}"></span> 
+  </div>
+  </div>
+  {{/each}}
+</div>
+</div>

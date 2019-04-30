@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "Style": {
+      "type": "string",
+      "title": "Style",
+	  "required":true,
+      "enum": [
+        "boxes_style_4",
+        "boxes_style_1",
+        "boxes_style_2",
+        "boxes_style_3",
+        "boxes_style_5",
+        "boxes_style_6",
+        "boxes_style_7",
+        "boxes_style_8"
+      ]
+    },
+    "TopPadding": {
+      "type": "string",
+      "title": "Top Padding",
+      "enum": [
+        "pt-10",
+        "pt-20",
+		"pt-30",
+        "pt-40",
+        "pt-50",
+        "pt60"
+      ]
+    },
+    "BottomPadding": {
+      "type": "string",
+      "title": "Bottom Padding",
+      "enum": [
+        "pb-10",
+		"pb-20",
+		"pb-30",
+        "pb-40",
+		"pb-50",
+        "pb60"
+      ]
+    },
+    "CssClass": {
+      "type": "string",
+      "title": "Css Class"
+    }
+  }
+}

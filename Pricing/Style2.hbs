@@ -1,0 +1,37 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="price-table price-table1 row">
+    {{#each Boxes}}
+    <div class="col-sm-{{divide "24" ../Settings.Columns}} col-md-{{divide "12" ../Settings.Columns}}">
+        <div class="price_icon{{add @index 1}}">
+            <span class="{{FontIcon}}"></span>
+        </div>
+        <div class="price_title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="price_holder">
+            <div class="price_box">
+                <span class="price">{{Currency}}</span>
+            </div>
+            <p>{{Description}}</p>
+            <ul>
+                <li>
+                    <span>{{Specification1}}</span>
+                </li>
+                <li>
+                    <span>{{Specification2}}</span>
+                </li>
+                <li>{{Specification3}}</li>
+                <li>
+                    <span>{{Specification4}}</span>
+                </li>
+                <li>
+                    <span>{{Specification5}}</span>
+                </li>
+            </ul>
+            <a class="btn" href="{{Link}}" {{#if LinkNewWindow}} target="_blank" {{/if}}>{{LinkText}}</a>
+
+        </div>
+    </div>
+    {{/each}}    
+</div>
+</div>

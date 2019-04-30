@@ -1,0 +1,43 @@
+{
+  "fields": {
+    "Style": {
+      "type": "select",
+      "optionLabels": [
+        "Box with green Background",
+        "Box with left colorline and grey background",
+        "Box with grey border",
+        "Box with grey background & border",
+        "Box with top colorline",
+        "Box with bottom colorline",
+        "Box with left colorline",
+        "Box with dark-grey background"
+      ]
+    },
+    "TopPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "BottomPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "CssClass": {
+      "type": "text",
+      "helper": "Container Css Class"
+    }
+  }
+}

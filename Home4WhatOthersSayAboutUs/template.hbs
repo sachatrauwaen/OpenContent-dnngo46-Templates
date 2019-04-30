@@ -1,0 +1,28 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="{{Settings.Style}}">
+    <div class="{{Settings.Style}}_bg">
+        <div class="pt40 pb40">
+            <div class="content_mid clearfix">
+                <div class="home4_title">
+                    <h4>What Others Say About Us</h4>
+                    <div class="line"></div>
+                </div>
+                <div class="carousel carousel_9 animation scaleUp" data-items="{{Settings.Items}}" {{#if Settings.navigation}}data-navigation="true"{{else}} data-navigation="false" {{/if}} {{#if Settings.pagination}}data-pagination="true"{{else}} data-pagination="false" {{/if}} {{#if Settings.autoplay}} data-autoplay="true" {{else}} data-autoplay="false" {{/if}}>
+                    {{#each Columns}}
+                    <div class="item">
+                        <ul class="Testimonials_tab Testimonials_8" data-autoplay="0" data-display-arrows="false" data-position="fade" data-display-navigation="false">
+                            <li>
+                                <blockquote>
+                                    <p>{{Description}}</p>
+                                    <small><img alt="{{Name}}" src="{{Image}}" /><span>{{Name}}</span>{{Title}}</small>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

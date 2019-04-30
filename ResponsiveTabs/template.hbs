@@ -1,0 +1,27 @@
+<div class="oc-thumbsnails {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+    <div class="{{Settings.Style}} resp-vtabs" id="tabposition">
+      <ul class="resp-tabs-list {{#equal Settings.Style "horizontalTab_Top horizontalTab_Top_1"}} clearfix {{/equal}}">
+        {{#each Tabs}}
+        <li id="title{{@index}}">
+          <span>
+            <em class="{{Icon}}"></em>{{Title}}
+          </span>
+        </li>
+        {{/each}}
+      </ul>
+      <div class="resp-tabs-container">
+        {{#each Tabs}}
+        <div class="resp_container">
+          <div class="resp_margin">{{Description}}</div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{#each Tabs}}
+    {{#if LinkOption}}       
+      <a  href="http://localhost:1830/Home/RESPONSIVE-TABS?ResponsiveTab=title{{@index}}#tabposition" class="Button_default Button_style" {{#if LinkNewWindow}} target="_blank" {{/if}}  >{{Title}}</a>   
+    {{/if}}
+    {{/each}}
+  
+</div>
+

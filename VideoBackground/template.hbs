@@ -1,0 +1,22 @@
+  {{#each Columns}}
+  <div class="row">
+<div data-property="{videoURL:'{{VideoURL}}',containment:'self', showControls:false, autoPlay:true, loop:true, vol:50, mute:true, startAt:10, opacity:1, addRaster:false, quality:'hd1080'}" class="player">
+  <div class="Play"></div>
+  <div class="dnn_layout pt40 pb40">
+    <div class="content_mid clearfix">
+      <div class="{{Style}}">
+        <h1 class="player_title">{{Title}}</h1>
+        <hr class="player_line" />
+        <h4 class="player_smalltitle">{{SubTitle}}</h4>
+        <div class="player_content">
+          <p>{{Description}}</p>
+        </div>
+        <p>
+          <a class="Button_blue" href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}} >{{LinkText}}</a>&nbsp;&nbsp;&nbsp;&nbsp; <a class="Button_blue" href="{{LinkUrl2}}" {{#if LinkNewWindow2}} target="_blank" {{/if}} >{{LinkText2}}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+{{/each}}

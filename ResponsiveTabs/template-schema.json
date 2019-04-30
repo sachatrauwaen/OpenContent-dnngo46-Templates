@@ -1,0 +1,45 @@
+﻿{
+  "type": "object",
+  "properties": {    
+	"Style": {
+      "type": "string",
+      "title": "Tab Style",
+	    "required":true,
+      "enum": [
+        "verticalTab_Left verticalTab_Left_1",
+        "verticalTab_Right verticalTab_Right_1",
+        "horizontalTab_Top horizontalTab_Top_1",
+		"horizontalTab_Top horizontalTab_Top_2",
+		"horizontalTab_Top horizontalTab_Top_3"
+      ]
+    },
+    "TopPadding": {
+      "type": "string",
+      "title": "Top Padding",
+      "enum": [
+        "pt-10",
+        "pt-20",
+		"pt-30",
+        "pt-40",
+        "pt-50",
+        "pt60"
+      ]
+    },
+    "BottomPadding": {
+      "type": "string",
+      "title": "Bottom Padding",
+      "enum": [
+        "pb-10",
+		"pb-20",
+		"pb-30",
+        "pb-40",
+		"pb-50",
+        "pb60"
+      ]
+    },
+    "CssClass": {
+      "type": "string",
+      "title": "Css Class"
+    }
+  }
+}

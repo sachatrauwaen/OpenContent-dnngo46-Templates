@@ -1,0 +1,70 @@
+{{registerstylesheet "/DesktopModules/OpenContent/css/font-awesome/css/font-awesome.css"}}
+
+<div class="row jplist-detail">
+    <div class="col-sm-12 col-md-12">
+		<div class="row article">
+			<div class="col-md-12">
+				{{#if Gallery}}
+				{{> flexslider}}
+				{{else}}
+				<img src="{{Image}}" alt="" title="" class="img-responsive" />
+				{{/if}}
+			</div>
+		</div>
+		<div class="row article">
+			<div class="caption col-md-12">
+				<h2 class="title">{{Title}}</h2>
+				
+		
+				<p class="tags">
+					{{#each Category}}
+					<span class="{{Id}}">{{Title}}</span>
+					{{/each}}
+				</p>
+				<div class="description">
+				{{Description}}
+				</div>
+			</div>
+		</div>
+		<div class="row article">
+			<div class="caption col-md-12">
+              
+                {{#if Gallery}}
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        {{> flexcarousel}}
+                      
+                    </div>
+                </div>
+                {{/if}}
+		</div>
+		</div>
+		<div class="row article">
+			<div class="caption col-md-12">
+                {{#if Documents}}
+                <div class="row panel-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Documents</div>
+                        <div class="panel-body">
+                            <ul>
+                                {{#each Documents}}
+                                <li>
+                                    <a href="{{File}}" alt="" title="" target="_blank">{{Title}}</a>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+        
+		</div>
+       
+        <div class="row">
+            <div class="col-md-12">
+                <a href="{{Context.MainUrl}}" class="btn btn-default">Return to list</a></li>
+            </div>
+        </div>
+    </div>
+</div>

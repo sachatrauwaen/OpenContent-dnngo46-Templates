@@ -1,0 +1,110 @@
+<script id="jplist-template" type="text/x-handlebars-template">
+
+<div class="Time_Line02">
+  <div class="back_top"></div>
+  {{#each Items}}
+  
+  <div class="list-item col-md-12">
+    <!-- item {{@index}} -->
+    
+    {{#ifeven @index}}
+    <div class="timeline02_year clearfix">
+	  <div class="Time_Line02_top">
+		<div class="Time_Line02_top_time">
+		  <div class="timline02_year_top">{{formatDateTime publishstartdate "DD"}}</div>
+		  <div class="timline02_year_bottom">{{formatDateTime publishstartdate "MMMM"}}</div>
+		</div>
+	  </div>
+	  <div class="Time_Line02_left">
+		<div class="Time_Line02_leftmain leftmain_02">
+		  <h3>{{{Title}}}</h3>
+		  {{{Summary}}}
+		  {{>social}}
+		  <a href="{{Context.DetailUrl}}" class="timeline_bnt">Lire cet article</a> </div>
+	  </div>
+	  <div class="Time_Line02_right">
+		<div class="Time_Line02_rightmain">
+		  <div class="photo_box shade_zoom"> 
+		  {{#if Video}}
+			<a href="{{Video}}" class="LightBox_youtube">
+			<div class="pic_box"> <img alt="" class="img-responsive" src="{{Image}}" />
+			  <div class="ico"> <span class="glyphicons glyph-play"></span> </div>
+			  <div class="shade"></div>
+			</div>
+			</a>
+			{{else}}
+			<div class="LightBox_image_group"> 
+				<a href="{{Image}}" data-effect="mfp-zoom-in" >
+				{{#if Gallery}}
+				<div class="photocount">{{math Gallery.length "+" "1"}}</div>
+				{{/if}}
+				<div class="pic_box"> 
+				<img alt="" class="img-responsive" src="{{Image}}" />
+					<div class="ico"> <span class="glyphicons glyph-picture"></span> </div>
+					<div class="shade"></div>
+				</div>
+				{{#each Gallery}}
+				<a href="{{Image}}"></a>
+				{{/each}}
+				</a>
+			</div>
+			{{/if}} 
+			</div>
+		</div>
+	  </div>
+	</div>
+    <div class="Time_Line02_line"></div>
+    {{else}}
+    <div class="timeline02_year clearfix">
+	  <div class="Time_Line02_top">
+		<div class="Time_Line02_top_time">
+		  <div class="timline02_year_top">{{formatDateTime publishstartdate "DD"}}</div>
+		  <div class="timline02_year_bottom">{{formatDateTime publishstartdate "MMMM"}}</div>
+		</div>
+	  </div>
+	  <div class="Time_Line02_left">
+		<div class="Time_Line02_leftmain">
+		  <div class="photo_box shade_zoom"> 
+			{{#if Video}}
+			<a href="{{Video}}" class="LightBox_youtube">
+			<div class="pic_box"> <img alt="" class="img-responsive" src="{{Image}}" />
+			  <div class="ico"> <span class="glyphicons glyph-play"></span> </div>
+			  <div class="shade"></div>
+			</div>
+			</a>
+			{{else}}
+			<div class="LightBox_image_group"> 
+				<a href="{{Image}}" data-effect="mfp-zoom-in" >
+				{{#if Gallery}}
+				<div class="photocount">{{math Gallery.length "+" "1"}}</div>
+				{{/if}}
+				<div class="pic_box"> 
+				<img alt="" class="img-responsive" src="{{Image}}" />
+					<div class="ico"> <span class="glyphicons glyph-picture"></span> </div>
+					<div class="shade"></div>
+				</div>
+				{{#each Gallery}}
+				<a href="{{Image}}"></a>
+				{{/each}}
+				</a>
+			</div>
+			{{/if}} 
+		  </div>
+		</div>
+	  </div>
+	  <div class="Time_Line02_right">
+		<div class="Time_Line02_rightmain rightmain_02">
+		  <h3>{{{Title}}}</h3>
+		  {{{Summary}}}
+		  {{>social}}
+		   <a href="{{Context.DetailUrl}}" class="timeline_bnt">Lire cet article</a> </div>
+		</div>
+	  </div>
+	</div>
+    {{/ifeven}}
+    {{/each}}
+    <div class="Time_Line02_line"></div>
+   
+  </div>
+  <br/><br/>
+</script>

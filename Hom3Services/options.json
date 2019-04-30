@@ -1,0 +1,36 @@
+{
+  "fields": {
+    "Columns": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "textarea"
+          },
+          "Items": {
+            "type": "table",
+            "items": {
+              "fields": {
+                "Text": {
+                  "type": "text"
+                }
+              }
+            }
+          },
+          "LinkText": {
+            "type": "url"
+          },
+          "LinkUrl": {
+            "type": "text"
+          },
+          "LinkNewWindow": {
+            "type": "checkbox"
+          }
+        }
+      }
+    }
+  }
+}

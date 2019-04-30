@@ -1,0 +1,16 @@
+.home5_services .fa {
+    background-color: #22bb75;
+}
+.home5_services .fa {
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+    color: #ffffff;
+    font-size: 22px;
+    border: 5px solid #ffffff;
+    background-color: #22bb75;
+    margin-top: -40px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}

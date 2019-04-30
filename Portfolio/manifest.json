@@ -1,0 +1,137 @@
+{    
+    "editWitoutPostback": false,
+	 "Index": true,
+    "detailMetaTitle": "{{#if Seo.MetaTitle}}{{Seo.MetaTitle}}{{else}}{{Title}}{{/if}}",
+    "detailMetaDescription": "{{#if Seo.MetaDescription}}{{Seo.MetaDescription}}{{else}}{{Description}}{{/if}}",
+    "detailUrl": "{{Category.Title}}-{{#if Seo.Slug}}{{Seo.Slug}}{{else}}{{Title}}{{/if}}",
+    "detailMeta": "{{#if Image}}<meta property=\"og:image\" content=\"{{Image}}\" />{{/if}}<meta property=\"og:type\" content=\"article\" />",
+    "templates": {
+		"sidebar": {
+            "type": "multiple", /* single or multiple*/
+            "title": "Sidebar",
+            "clientSideData": true, /*  */
+            "main": {
+                "template": "sidebar.hbs",
+                "partialTemplates": {
+                    "item": {
+                        "template": "item.hbs",
+                        "clientside": true
+                    }
+                },
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,
+                "additionalDataInTemplate": true
+            },
+            "detail": {
+                "template": "detail.hbs",
+                "partialTemplates": {
+                    "flexslider": {
+                        "template": "flexslider.hbs"
+                    },
+                     "flexcarousel": {
+                        "template": "flexcarousel.hbs"
+                    }
+                },
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,
+                "additionalDataInTemplate": true
+            }
+
+        },
+        "grid": {
+            "type": "multiple", /* single or multiple*/
+            "title": "Grid",            
+            "main": {
+                "template": "grid.hbs",
+               
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,				
+                "additionalDataInTemplate": true
+            },
+            "detail": {
+                "template": "detail.hbs",
+               
+                  "schemaInTemplate": true,
+                "optionsInTemplate": true
+            }
+        },
+		 "classic": {
+            "type": "multiple", /* single or multiple*/
+            "title": "Classic",            
+            "main": {
+                "template": "classic.hbs",
+             
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,
+				 "additionalDataInTemplate": true
+            },
+            "detail": {
+                "template": "detail.hbs",
+                "partialTemplates": {
+
+                },
+                  "schemaInTemplate": true,
+                "optionsInTemplate": true
+            }
+        },
+		"text": {
+            "type": "multiple", /* single or multiple*/
+            "title": "Text",            
+            "main": {
+                "template": "text.hbs",               
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,
+				 "additionalDataInTemplate": true
+            },
+            "detail": {
+                "template": "detail.hbs",
+                "partialTemplates": {
+
+                },
+                  "schemaInTemplate": true,
+                "optionsInTemplate": true
+            }
+        },
+		"list": {
+            "type": "multiple", /* single or multiple*/
+            "title": "List",            
+            "main": {
+                "template": "list.hbs",
+               
+                "schemaInTemplate": true,
+                "optionsInTemplate": true,
+				 "additionalDataInTemplate": true
+            },
+            "detail": {
+                "template": "detail.hbs",
+               
+                  "schemaInTemplate": true,
+                "optionsInTemplate": true
+            }
+        },
+        "categories": {
+            "type": "multiple", /* single or multiple*/
+            "title": "Categories",
+            "main": {
+                "template": "categories.hbs",
+                "schemaInTemplate": true,
+                "optionsInTemplate": true
+            },
+            "detail": {
+                "template": "categories.hbs",
+                "partialTemplates": {
+
+                }
+            }
+        }
+    },
+	"additionalData": {
+       
+        "Categories": {
+            "title": "Categories",
+            "storageKey": "Categories",
+            "modelKey": "Categories"
+        }
+		
+    }
+}

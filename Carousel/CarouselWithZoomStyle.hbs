@@ -1,0 +1,27 @@
+<div class="oc-carousel {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+	<div class="carousel carousel_1"  data-items="{{Settings.Items}}" {{#if Settings.navigation}}  data-navigation="true" {{else}} data-navigation="false"{{/if}}  {{#if Settings.pagination}} data-pagination="true" {{else}} data-pagination="false"{{/if}}  {{#if Settings.autoplay}} data-autoplay="true" {{else}} data-autoplay="false"{{/if}} >
+	{{#each Columns}}
+	<div class="photo_box content_zoom content_sytle_2">
+	  <div class="pic_box">
+		<img alt="{{Title}}" src="{{Image}}" />
+		<div class="content ">
+		  <div class="vertical_center_1">
+			<div class="vertical_center_2">
+			  <h3>{{Title}}</h3>
+			  <p>{{Description}}</p>
+			  {{#if LinkOption}}
+			  <a  class="but" href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}} >{{LinkText}}</a>
+			  {{/if}}
+			</div>
+		  </div>
+		</div>
+		<div class="shade"></div>
+	  </div>
+	</div>
+	{{/each}}
+	</div>
+</div>
+
+
+
+

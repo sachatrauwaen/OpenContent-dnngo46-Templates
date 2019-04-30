@@ -1,0 +1,27 @@
+{{registerstylesheet "/DesktopModules/OpenContent/css/font-awesome/css/font-awesome.min.css"}}
+
+{{#if Settings.EqualHeight}}{{registerscript "jquery.matchHeight-min.js"}}{{/if}}
+
+<div class="SectionStyles5">
+  <div class="SectionStyles5_bg">
+    <div class="dnn_layout pt40 pb40">
+      <div class="content_mid clearfix">
+        <div class="home4_title">
+          <h4>{{Title}}</h4>
+          <div class="line"></div>
+        </div>
+        <div class="row">
+          {{#each Columns}}
+          <div class="col-md-{{divide "12" ../Settings.Columns}} col-sm-{{divide "24" ../Settings.Columns}} animation fadeInUp">
+            <div class="home5_services text-center" data-mh="my-group"> <span class="{{Icon}}"></span>
+              <h3>{{Title}}</h3>
+              <p>{{Description}}</p>
+              <div><a target="blank" href="{{LinkUrl}}">{{LinkUrl}}</a></div>
+            </div>
+          </div>
+          {{/each}}          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "title": "Generated Alpaca Form",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Titre"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "link": {
+            "type": "string",
+            "title": "Url"
+          },
+          "icon": {
+            "type": "string",
+            "title": "Icone"
+          }
+        }
+      }
+    }
+  }
+}

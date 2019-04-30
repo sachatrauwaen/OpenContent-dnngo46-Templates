@@ -1,0 +1,13 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+	<div class="{{Settings.Style}}">
+	  <div class="boxes">
+		<h3 class="Boxes_title">{{Title}}</h3>
+		<p>{{Description}}</p>
+		{{#if LinkUrl}}
+		<div class="but">
+		  <a class="Button_default2" href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}} >{{LinkText}}</a>
+		</div>
+		{{/if}}
+	  </div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="home4_serve pt40">
+    <div class="row">
+        {{#each Columns}}
+        <div class="col-sm-4 animation periodic{{add @index 1}} animated">
+            <div class="icon"><span class="{{BoxIcon}}"></span></div>
+            <h4>{{Title}}</h4>
+            <div class="line"></div>
+            <p>{{Description}}</p>
+            {{#if LinkOption}}
+            <a class="Button_default" href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}}>{{LinkText}}</a>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</div>
+</div>

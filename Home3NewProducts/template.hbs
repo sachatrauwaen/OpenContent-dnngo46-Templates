@@ -1,0 +1,78 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="home3cond">
+  <div class="dnn_layout">
+    <div class="content_mid clearfix">
+        <div class="pane_layout">
+            <h3 class="title">New Products</h3>
+            <div class="line"></div>
+            <div class="carousel carousel_10" {{#if Settings.autoheight}} data-autoheight="true" {{else}} data-autoheight="false" {{/if}} data-items="{{Settings.Items}}" {{#if Settings.navigation}} data-navigation="true" {{else}} data-navigation="false" {{/if}} {{#if Settings.pagination}} data-pagination="true" {{else}} data-pagination="false" {{/if}} {{#if Settings.autoplay}} data-autoplay="true" {{else}} data-autoplay="false" {{/if}}>
+                {{#each Columns}}
+                <div class="item">
+                    <div class="flip_box {{Settings.BoxRotation}}  flip_box_6">
+                        <div class="rotate">
+                            <div class="front">
+                                <img class="img-responsive" alt="{{Title}}" src="{{Image}}" />
+                                <div class="bottom">
+                                    <h3>{{Title}}</h3>
+                                    <h4>{{Title2}}</h4>
+                                    <div class="Price clearfix">
+									
+                                        <div class="Priceleft">
+											{{#equal Stars "1"}}
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											{{/equal}}
+											{{#equal Stars "2"}}
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											{{/equal}}
+											{{#equal Stars "3"}}
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											{{/equal}}
+											{{#equal Stars "4"}}
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-dislikes"></span>
+											{{/equal}}
+											{{#equal Stars "5"}}
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											<span class="glyphicons glyph-star"></span>
+											{{/equal}}
+										</div>
+                                        <div class="Priceright">${{Price}}.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <h3>{{Title}}</h3>
+                                <h4>{{Title2}}</h4>
+                                <p>{{Description}}</p>
+                                {{#if LinkOption}}
+                                <a class="but" href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}}>{{LinkText}}</a>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+</div>

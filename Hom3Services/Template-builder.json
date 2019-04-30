@@ -1,0 +1,86 @@
+{
+  "formfields": [
+    {
+      "fieldname": "Columns",
+      "title": "Columns",
+      "fieldtype": "select",
+      "fieldoptions": [
+        {
+          "value": "2",
+          "text": "2"
+        },
+        {
+          "value": "3",
+          "text": "3"
+        },
+        {
+          "value": "4",
+          "text": "4"
+        },
+        {
+          "value": "6",
+          "text": "6"
+        }
+      ],
+      "advanced": false
+    },
+    {
+      "fieldname": "EqualHeight",
+      "title": "Equal Height Columns",
+      "fieldtype": "checkbox",
+      "advanced": false
+    },
+    {
+      "fieldname": "TopMargin",
+      "title": "Top Margin",
+      "fieldtype": "select",
+      "fieldoptions": [
+        {
+          "value": "pt20",
+          "text": "20px"
+        },
+        {
+          "value": "pt40",
+          "text": "40px"
+        },
+        {
+          "value": "pt60",
+          "text": "60px"
+        }
+      ],
+      "advanced": false
+    },
+    {
+      "fieldname": "BottomMargin",
+      "title": "Bottom Margin",
+      "fieldtype": "select",
+      "fieldoptions": [
+        {
+          "value": "pb20",
+          "text": "20px"
+        },
+        {
+          "value": "pb40",
+          "text": "40px"
+        },
+        {
+          "value": "pb60",
+          "text": "60px"
+        }
+      ],
+      "advanced": false
+    },
+    {
+      "fieldname": "CssClass",
+      "title": "Css Class",
+      "fieldtype": "text",
+      "advanced": true,
+      "required": false,
+      "hidden": false,
+      "helper": "Container Css Class",
+      "multilanguage": false,
+      "dependencies": []
+    }
+  ],
+  "formtype": "object"
+}

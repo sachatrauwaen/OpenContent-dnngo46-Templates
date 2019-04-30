@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "Image": {
+      "type": "string",
+      "title": "Image"
+    },
+    "Items": {
+      "type": "array",
+      "title": "List Items",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          }
+        }
+      }
+    },
+    "LinkUrl": {
+      "type": "string",
+      "title": "Link Url"
+    },
+    "LinkText": {
+      "type": "string",
+      "title": "Link Text"
+    }
+  }
+}

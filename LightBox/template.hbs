@@ -1,0 +1,75 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="row">
+    {{#each Columns}}
+    <div class="col-md-{{divide "12" ../Settings.Columns}}">
+		{{#equal Content "images"}}
+        <div class="photo_box box_border_padding LightBox_image_group">
+            <a title=" People Scenery 1" href="{{Image}}" data-effect="{{Settings.EffectStyle}}">
+                <div class="pic_box">
+					
+                    <img alt="{{Title}}" class="img-responsive" src="{{Image}}" />
+                    <div class="ico">
+                        <span class="{{BoxIcon}}"></span>
+                    </div>
+                    <div class="shade"></div>
+                </div>
+            </a>
+			
+			{{#each Images}}
+			<a title="{{Title}}" href="{{Image}}"></a>
+			{{/each}}
+			<div class="text_sytle_5">
+				<h3>
+				  <span>{{add Images.Length 1}}</span>{{Title}}
+				</h3>
+			</div>
+			
+        </div>
+		{{/equal}}
+		{{#equal Content "image"}}
+        <div class="photo_box">
+            <a title="Image Gallery " class="LightBox_image_gallery1 LightBox_image" href="{{Image}}" data-effect="{{Settings.EffectStyle}}">
+                <div class="pic_box">
+                    <img alt="" class="img-responsive" src="{{Image}}" />
+                    <div class="ico"> <span class="{{BoxIcon}}"></span> </div>
+                    <div class="shade"></div>
+                </div>
+            </a>
+        </div>
+		{{/equal}}
+		
+		{{#equal Content "youtube"}}        
+		<div class="photo_box default_show box_border_padding box_border_radius"> 
+            <a href="{{Url}}" class="LightBox_youtube">
+                <div class="pic_box"> <img alt="" class="img-responsive" src="{{Image}}" />
+                    <div class="ico ico_no_bg"> <span class="{{BoxIcon}}"></span> </div>
+                    <div class="shade"></div>
+                </div>
+            </a> 
+        </div>
+		{{/equal}}
+		{{#equal Content "vimeo"}}
+        <div class="photo_box default_show box_border_padding box_border_radius"> 
+            <a href="{{Url}}" class="LightBox_vimeo">
+                <div class="pic_box"> <img alt="" class="img-responsive" src="{{Image}}" />
+                    <div class="ico"> <span class="{{BoxIcon}}"></span> </div>
+                    <div class="shade"></div>
+                </div>
+            </a> 
+        </div>
+		{{/equal}}
+		{{#equal Content "map"}}
+        <div class="photo_box default_show box_border_padding box_border_radius"> 
+            <a href="{{Url}}" class="LightBox_gmaps">
+                <div class="pic_box"> <img alt="" class="img-responsive" src="{{Image}}" />
+					<div class="ico ico_no_bg"> <span class="{{BoxIcon}}"></span> </div>
+					<div class="shade"></div>
+				</div>
+            </a> 
+        </div>
+		{{/equal}}
+    </div>
+    {{/each}}
+</div>
+</div>
+

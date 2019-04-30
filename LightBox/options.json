@@ -1,0 +1,65 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+          "BoxIcon": {
+            "type": "icon",
+            "glyphicons": true,
+            "bootstrap": false,
+            "fontawesome": false
+          },
+          "Image": {
+            "type": "image"
+          },
+          "Content": {
+            "type": "select",
+            "optionLabels": [
+              "Main Image",
+              "Many Images",
+              "Youtube Video",
+              "Vimeo Video",
+              "Google Map"
+            ]
+          },
+        
+          "Images": {
+            "type": "array",
+            "dependencies": {
+              "Content": [
+                "images"
+              ]
+            },
+            "items": {
+              "fields": {
+                "Title": {
+                  "type": "text"
+                },
+                "Image": {
+                  "type": "image"
+                }
+              }
+            }
+          },
+          "Url": {
+            "type": "text",
+            "dependencies": {
+              "Content": [
+                "youtube",
+                "vimeo",
+                "map"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div class="oc-carousel {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+	<div class="carousel carousel_4" {{#if Settings.autoheight}} data-autoheight="true" {{else}} data-autoheight="false"{{/if}}  {{#if Settings.navigation}}  data-navigation="true" {{else}} data-navigation="false"{{/if}}  {{#if Settings.pagination}} data-pagination="true" {{else}} data-pagination="false"{{/if}}  {{#if Settings.autoplay}} data-autoplay="true" {{else}} data-autoplay="false"{{/if}} >
+	{{#each Columns}}
+	<div class="item">
+	  <img alt="{{Title}}" src="{{Image}}" />
+	</div>
+	{{/each}}
+	</div>
+</div>

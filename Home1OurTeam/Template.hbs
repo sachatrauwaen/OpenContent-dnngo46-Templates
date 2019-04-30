@@ -1,0 +1,36 @@
+<div class="oc-home1ourteam {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="{{Settings.Style}}">
+    <div class="{{Settings.Style}}_bg">
+        <div class="content_mid clearfix">
+            <div class="pane_layout">
+                <div data-title="Our Teams" class="home2_cona anchorTag">
+                    <div class="linebox">
+                        <div class="line"></div>
+                    </div>
+                    <div class="number">04</div>
+                    <div class="title">Our Teams</div>
+                </div>
+                <p class="home2_conb">{{Settings.TeamDescription}}</p>
+                <div class="row ourteam_1">
+                    {{#each Columns}}
+                    <div class="col-sm-{{divide "24" ../Settings.Columns}} col-md-{{divide "12" ../Settings.Columns}}">
+                        <div class="team_list">
+                            <div class="team_person">
+                                <div class="team_img"><img alt="{{Title}}" src="{{Image}}" class="img-responsive" /></div>
+                            </div>
+                            <div class="team_content">
+                                <div class="team_title">{{Title}}</div>
+                                <div class="team_title2">{{Designation}}</div>
+                                <span class="team_titleline"></span>
+                                <p> {{Description}}</p>
+                                <div class="team_social"> <a href="{{FaceBookLinkUrl}}" {{#if FaceBookLinkNewWindow}} target="_blank" {{/if}}><span class="social social-facebook"></span></a> <a href="{{TwitterLinkUrl}}" {{#if TwitterLinkNewWindow}} target="_blank" {{/if}}><span class="social social-twitter"></span></a> <a href="{{LinkedInLinkUrl}}" {{#if LinkedInLinkNewWindow}} target="_blank" {{/if}}><span class="social social-linked-in"></span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

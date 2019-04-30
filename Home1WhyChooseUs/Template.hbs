@@ -1,0 +1,21 @@
+<div class="topc pt40 row">
+    <div class="topc_left col-sm-5">
+        <div class="topc_imga animation fadeInLeft"> <img alt="" src="{{Image}}" class="img-responsive" /> </div>
+    </div>
+    <div class="topc_right col-sm-7">
+      	<h2>{{Title}}</h2>
+        <div class="topc_rightline"></div>
+      	<p>{{Description}}</p>
+        <ul class="topc_righbox row">
+          {{#each Items}}
+            <li class="col-sm-6 col-xs-12">
+              <div class="topc_righbox_icon animation periodic1">{{add @index 1}}</div>
+              <div class="topc_righbox_text"> <span>{{Title}}</span><br />
+                {{Description}}</div>
+            </li>
+          {{/each}}
+            
+        </ul>
+      <a target="blank" href="{{LinkUrl}}" class="Button_default">{{LinkText}}</a> 
+	</div>
+</div>

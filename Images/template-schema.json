@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "properties": {
+	 "Columns": {
+      "type": "string",
+      "title": "Columns",
+	  "required":true,
+      "enum": [
+		"1",
+        "2",
+        "3",
+        "4",
+        "6"		
+      ],	
+	  "default":"1"
+    },
+	
+	"PhotoBoxStyle": {
+		"type": "string",
+		"title": "Box Style",
+		"enum": [
+			"box_bottom_shadow_right",
+			"box_bottom_shadow_left box_bottom_shadow_right",
+			"box_bottom_shadow",
+			"box_dotted_padding",
+			"box_border_padding",
+			"box_border",
+			"box_border_round",
+			"box_border_radius"				
+		]
+	},
+	"PhotoAnimationStyle": {
+	  "type": "string",
+	  "title": "Animation Style",
+	  "enum": [
+		"content_zoom content_sytle_2",
+		"shade_zoom",
+		"entirety bevel",
+		"entirety left offset",
+		"content_bottom_push_in_2",
+		"content_bottom_push_in",
+		"content_push_in",
+		"img_flip content_sytle_2",
+		"content_top_increment",		
+		"img_zoom"
+	  ]			 
+	},
+	"IconStyle": {
+	  "type": "string",
+	  "title": "Icon Animation",
+	  "enum": [
+		"default_show",
+		"ico_right_enter",
+		"ico_left_enter",
+		"ico_rotate",
+		"ico_LeftAndRight_enter",
+		"icon_tag_push",
+		"ico_zoom",
+		"ico_right_rotate",
+		"ico_left_rotate",
+		"ico_push_in",
+		"ico_TopAndBottom_enter",
+		"ico_bottom_enter",
+		"ico_top_enter"
+	  ]			 
+	},
+	"Shade": {
+      "type": "boolean",
+      "title": "Shade"
+    },
+	 "TextStyle": {
+		"type": "string",
+		"title": "Bottom Text Style",
+		"enum": [
+			"text_sytle_1",
+			"text_sytle_2",
+			"text_sytle_3",
+			"text_sytle_4"
+		]
+	},
+    "TopPadding": {
+      "type": "string",
+      "title": "Top Padding",
+      "enum": [
+        "pt-10",
+        "pt-20",
+		"pt-30",
+        "pt-40",
+        "pt-50",
+        "pt60"
+      ]
+    },
+    "BottomPadding": {
+      "type": "string",
+      "title": "Bottom Padding",
+      "enum": [
+        "pb-10",
+		"pb-20",
+		"pb-30",
+        "pb-40",
+		"pb-50",
+        "pb60"
+      ]
+    },
+    "CssClass": {
+      "type": "string",
+      "title": "Css Class"
+    }
+  }
+}

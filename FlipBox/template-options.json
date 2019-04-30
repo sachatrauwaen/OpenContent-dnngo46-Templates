@@ -1,0 +1,47 @@
+{
+  "fields": {
+    "Columns": {
+      "type": "select",
+      "optionLabels": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+	"BoxStyle": {
+      "type": "select",
+      "optionLabels": [
+        "White box & green Icon",
+        "Grey box",
+        "No box & green verso"
+      ]
+    },
+    "TopPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "BottomPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "CssClass": {
+      "type": "text",
+      "helper": "Container Css Class"
+    }
+  }
+}

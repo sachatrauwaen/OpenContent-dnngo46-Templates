@@ -1,0 +1,37 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Image": {
+            "type": "image"
+          },
+          "Caption": {
+            "type": "checkbox",
+            "label": "Caption ?"
+          },
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "wysihtml"
+          },
+          "LinkText": {
+            "type": "text"
+          },
+          "LinkUrl": {
+            "type": "text"
+          },
+          "LinkNewWindow": {
+            "type": "checkbox",
+            "label": "Open Link in new window"
+          }
+        }
+      }
+    }
+  }
+}

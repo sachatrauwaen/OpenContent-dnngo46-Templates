@@ -1,0 +1,15 @@
+<div class="oc-quotes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="quotes_2">
+  {{#if Settings.Divider}} <hr class="{{Settings.DividerStyle}}" />{{/if}}
+	{{#each Columns}}
+	  <blockquote>
+		<p class="{{#if @root.Settings.White}}quotes_2p{{/if}}" >&ldquo; {{Description}} &rdquo;</p>
+		<small>
+		  <img alt="" class="img-responsive" src="{{Image}}" />{{Name}}, <span>{{Year}}</span>
+		</small>
+	  </blockquote>
+	{{/each}}
+</div>
+</div>
+
+

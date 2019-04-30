@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "Columns": {
+      "type": "string",
+      "title": "Columns",
+      "enum": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    "EqualHeight": {
+      "type": "boolean",
+      "title": "Equal Height Columns"
+    },
+    "TopMargin": {
+      "type": "string",
+      "title": "Top Margin",
+      "enum": [
+        "pt20",
+        "pt40",
+        "pt60"
+      ]
+    },
+    "BottomMargin": {
+      "type": "string",
+      "title": "Bottom Margin",
+      "enum": [
+        "pb20",
+        "pb40",
+        "pb60"
+      ]
+    },
+    "CssClass": {
+      "type": "string",
+      "title": "Css Class"
+    }
+  }
+}

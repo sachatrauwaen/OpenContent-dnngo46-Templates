@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "properties": {
+        "ModuleTitle": {
+            "type": "string",
+            "title": "Module Title"
+        },
+        "Columns": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Title": {
+                        "type": "string",
+                        "title": "Title"
+                    },
+                    "Name": {
+                        "type": "string",
+                        "title": "Name"
+                    },
+                    "Description": {
+                        "type": "string",
+                        "title": "Description"
+                    },
+                    "BoxIcon": {
+                        "type": "string",
+                        "title": "Icon"
+                    },
+                    "LinkOption": {
+                        "type": "boolean",
+                        "title": "If You want to have Read More link!"
+                    },
+                    "LinkUrl": {
+                        "type": "string",
+                        "title": "More Info Link",
+                        "dependencies": [ "LinkOption" ]
+                    },
+                    "LinkText": {
+                        "type": "string",
+                        "title": "Link Text",
+                        "dependencies": [ "LinkOption" ]
+                    },
+                    "LinkNewWindow": {
+                        "type": "boolean",
+                        "title": "New Window",
+                        "dependencies": [ "LinkOption" ]
+                    }
+                }
+            }
+        }
+    }
+}

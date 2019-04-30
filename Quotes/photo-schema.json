@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+      "White": {
+	  "type": "boolean",
+	  "title": "White Background"
+	  
+	},
+	"Divider": {
+			"type": "boolean",
+			"title": "Divider?"
+	},
+	"DividerStyle": {
+	  "type": "string",
+	  "title": "Description Text Style",
+	  "enum": [
+		"dividers_1",
+		"dividers_2",
+		"dividers_3",
+		"dividers_4",
+		"dividers_5",
+		"dividers_6",
+		"dividers_7",
+		"dividers_8"			
+	  ],
+	  "dependencies": [
+		"Divider"
+      ]	  
+	},
+    "TopPadding": {
+      "type": "string",
+      "title": "Top Padding",
+      "enum": [
+        "pt-10",
+        "pt-20",
+		"pt-30",
+        "pt-40",
+        "pt-50",
+        "pt60"
+      ]
+    },
+    "BottomPadding": {
+      "type": "string",
+      "title": "Bottom Padding",
+      "enum": [
+        "pb-10",
+		"pb-20",
+		"pb-30",
+        "pb-40",
+		"pb-50",
+        "pb60"
+      ]
+    },
+    "CssClass": {
+      "type": "string",
+      "title": "Css Class"
+    }	 
+  }
+}

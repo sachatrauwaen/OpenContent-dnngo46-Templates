@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Image": {
+            "type": "string",
+            "title": "Image"
+          },
+          "Caption": {
+            "type": "boolean"
+          },
+          "Title": {
+            "type": "string",
+            "title": "Title",
+            "dependencies": [
+              "Caption"
+            ]
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description",
+            "dependencies": [
+              "Caption"
+            ]
+          },
+          "LinkText": {
+            "type": "string",
+            "title": "Link Text",
+            "dependencies": [
+              "Caption"
+            ]
+          },
+          "LinkUrl": {
+            "type": "string",
+            "title": "Link Url",
+            "dependencies": [
+              "Caption"
+            ]
+          },
+          "LinkNewWindow": {
+            "type": "boolean",
+            "dependencies": [
+              "Caption"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

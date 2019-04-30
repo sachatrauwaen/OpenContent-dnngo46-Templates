@@ -1,0 +1,65 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Columns": {
+      "items": {
+        "fields": {
+          "Image": {
+            "type": "image"
+          },
+		  "LinkUrl": {
+            "type": "url",
+			"helper": "Leave empty if 2 icons or button"
+          },
+		  "PhotoIcon1": {
+			"type": "icon",
+			"glyphicons" : true,
+			"fontawesome" : false 
+		  },
+		  "LinkUrlPhotoIcon1": {
+            "type": "url"
+          },
+          "LinkNewWindowPhotoIcon1": {
+            "type": "checkbox"
+          },
+		  "PhotoIcon2": {
+			"type": "icon",
+			"glyphicons" : true,
+			"fontawesome" : false
+			
+		  },
+		  "LinkUrlPhotoIcon2": {
+            "type": "url"
+          },
+          "LinkNewWindowPhotoIcon2": {
+            "type": "checkbox"
+            
+          },
+		 
+          "Title": {
+            "type": "text"
+			
+          },
+		
+          "Description": {
+            "type": "textarea"
+          },
+		 "ButtonUrl": {
+            "type": "url"
+          },
+		   "LinkTextStyle": {
+			 "type": "select",
+			 "optionLabels": [
+				"Link sytle 1",
+				"Link sytle 2",
+				"Link sytle 3",
+				"Link sytle 4"		
+			]
+		  },
+        }
+      }
+    }
+  }
+}

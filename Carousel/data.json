@@ -1,0 +1,64 @@
+{
+  "Columns": [
+    {
+      "Title": "This in title 1",
+      "Description": "Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipite.",
+      "BoxIcon": "glyphicons glyph-glass",
+      "Image": "/Portals/dnngo46/OpenContent/Files/789/carousel_01.jpg",
+      "LinkOption": true,
+      "LinkUrl": "http://www.openextensions.net/demos/opencontent/sliders",
+      "LinkText": "Read More",
+      "LinkNewWindow": true
+    },
+    {
+      "Title": "This in title 2 ",
+      "Description": "Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipite.",
+      "BoxIcon": "glyphicons glyph-leaf",
+      "Image": "/Portals/dnngo46/OpenContent/Files/789/carousel_02.jpg",
+      "LinkOption": true,
+      "LinkUrl": "http://www.openextensions.net/demos/opencontent/sliders",
+      "LinkText": "Read More",
+      "LinkNewWindow": true
+    },
+    {
+      "Title": "This in title 3",
+      "Description": "Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipite.",
+      "BoxIcon": "glyphicons glyph-girl",
+      "Image": "/Portals/dnngo46/OpenContent/Files/790/carousel_03.jpg",
+      "LinkOption": true,
+      "LinkUrl": "http://www.openextensions.net/demos/opencontent/sliders",
+      "LinkText": "Read More",
+      "LinkNewWindow": true
+    },
+    {
+      "Title": "This in title 3",
+      "Description": "Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipite.",
+      "BoxIcon": "glyphicons glyph-car",
+      "Image": "/Portals/dnngo46/OpenContent/Files/789/carousel_02.jpg",
+      "LinkOption": true,
+      "LinkUrl": "http://www.openextensions.net/demos/opencontent/sliders",
+      "LinkText": "Read More",
+      "LinkNewWindow": false
+    },
+    {
+      "Title": "This in title 4",
+      "Description": "Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipite.",
+      "BoxIcon": "glyphicons glyph-train",
+      "Image": "/Portals/dnngo46/OpenContent/Files/790/carousel_04.jpg",
+      "LinkOption": true,
+      "LinkUrl": "http://www.openextensions.net/demos/opencontent/sliders",
+      "LinkText": "Read More",
+      "LinkNewWindow": true
+    },
+    {
+      "Title": "This in title 5",
+      "Description": "Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipite.",
+      "BoxIcon": "glyphicons glyph-beach-umbrella",
+      "Image": "/Portals/dnngo46/OpenContent/Files/790/carousel_01.jpg",
+      "LinkOption": true,
+      "LinkUrl": "http://www.openextensions.net/demos/opencontent/sliders",
+      "LinkText": "Read More",
+      "LinkNewWindow": true
+    }
+  ]
+}

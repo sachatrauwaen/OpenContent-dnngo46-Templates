@@ -1,0 +1,21 @@
+{{#if Settings.EqualHeight}}{{registerscript "jquery.matchHeight-min.js"}}{{/if}}
+<div class="oc-home3services {{Settings.TopMargin}} {{Settings.BottomMargin}} {{Settings.CssClass}}">
+<div class="row">
+    {{#each Columns}}
+  	<div class="col-md-{{divide "12" ../Settings.Columns}} col-sm-{{divide "24" ../Settings.Columns}}" >
+    <div class="home3conc">
+      <div class="home3conc_{{add @index 1}}">
+        <h3 class="title"><span class="glyphicons glyph-chevron-right"></span>{{Title}}</h3>
+        <p class="test">{{Description}}</p>
+        <ul class="list">
+          {{#each Items}}
+          <li><span class="glyphicons glyph-align-left"></span>{{Text}}</li>
+          {{/each}}
+        </ul>
+        <a href="{{LinkUrl}}" {{#if LinkNewWindow}}target="_blank"{{/if}} class="btn btn-primary" role="button">{{LinkText}}</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+</div>

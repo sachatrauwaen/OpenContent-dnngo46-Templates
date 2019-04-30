@@ -1,0 +1,92 @@
+<div class="oc-boxes {{Settings.TopPadding}} {{Settings.BottomPadding}} {{Settings.CssClass}}">
+<div class="row">
+	{{#each Columns}}
+	<div class="col-md-{{divide "12" ../Settings.Columns}} col-sm-{{divide "24" ../Settings.Columns}}" >
+	
+		<div class="photo_box {{@root.Settings.PhotoAnimationStyle}} {{@root.Settings.IconStyle}} {{@root.Settings.PhotoBoxStyle}}" >
+			
+			
+            {{#if LinkUrl}}
+            <a href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}}>
+            {{/if}}
+			
+			
+                <div class="pic_box">
+                    <img src="{{Image}}" class="img-responsive" alt="{{Title}}" >
+					{{#ifin  @root.Settings.PhotoAnimationStyle "content_top_increment" "img_zoom" "img_flip content_sytle_2" "content_zoom content_sytle_2" "content_bottom_push_in_2" "entirety_bevel" "content_bottom_push_in"}}
+					<div class="content">
+						<div class="vertical_center_1">
+							<div class="vertical_center_2">					
+					{{/ifin}}
+							
+								<div class="ico">
+									{{#if PhotoIcon1}}
+										{{#if LinkUrlPhotoIcon1}}
+												<a href="{{LinkUrlPhotoIcon1}}" {{#if linknewwindowphotoicon1}} target="_blank" {{/if}}><span class="{{PhotoIcon1}} {{#equal @root.Settings.IconStyle "ico_LeftAndRight_enter"}}ico_left{{/equal}} {{#equal @root.Settings.PhotoAnimationStyle "ico_TopAndBottom_enter"}}ico_top{{/equal}}"></span></a>
+										{{else}}
+											<span class="{{PhotoIcon1}} {{#equal @root.Settings.IconStyle "ico_LeftAndRight_enter"}}ico_left{{/equal}} {{#equal @root.Settings.IconStyle "ico_TopAndBottom_enter"}}ico_top{{/equal}}"></span>
+										{{/if}}
+									{{/if}}
+									{{#if PhotoIcon2}}
+										{{#if LinkUrlPhotoIcon2}}
+											<a href="{{LinkUrlPhotoIcon2}}" {{#if linknewwindowphotoicon2}} target="_blank" {{/if}}> <span class="{{PhotoIcon2}} {{#equal @root.Settings.IconStyle "ico_LeftAndRight_enter"}}ico_right{{/equal}} {{#equal @root.Settings.PhotoAnimationStyle "ico_TopAndBottom_enter"}}ico_bottom{{/equal}}"></span></a>
+										{{else}}
+											<span class="{{PhotoIcon2}} {{#equal @root.Settings.IconStyle "ico_LeftAndRight_enter"}}ico_right{{/equal}} {{#equal @root.Settings.IconStyle "ico_TopAndBottom_enter"}}ico_bottom{{/equal}}"></span>
+										{{/if}}
+									{{/if}}
+									
+								</div>
+								{{#unless @root.Settings.TextStyle}}
+									{{#if Title}}
+									<h3 class="{{@root.Settings.TitleTextStyle}} {{#equal  @root.Settings.PhotoAnimationStyle "content_top_increment"}}increment_3{{/equal}}">{{Title}}</h3>
+									{{/if}}
+									{{#if Description}}
+									<p class="{{@root.Settings.DescriptionTextStyle}} {{#equal  @root.Settings.PhotoAnimationStyle "content_top_increment"}}increment_2{{/equal}}">{{Description}}</p>
+									{{/if}}
+								{{/unless}}
+								
+								{{#if ButtonUrl}}
+								{{#equal  @root.Settings.PhotoAnimationStyle "content_top_increment"}}
+								<div class="increment_1">
+								{{/equal}}
+								<a href="{{ButtonUrl}}" class="but" {{#if  ButtonNewWindow}} target="_blank" {{/if}}>{{ ButtonText}}</a>
+								{{#equal  @root.Settings.PhotoAnimationStyle "content_top_increment"}}
+								</div>
+								{{/equal}}
+								{{/if}}
+							
+								
+								
+					{{#ifin  @root.Settings.PhotoAnimationStyle "content_top_increment" "img_zoom" "img_flip content_sytle_2" "content_zoom content_sytle_2" "content_bottom_push_in_2" "entirety_bevel" "content_bottom_push_in" }}
+							</div>
+						</div>
+					</div>
+					{{/ifin}}
+					{{#if @root.Settings.Shade}}
+                    <div class="shade"></div>
+					{{/if}}
+                </div>
+            {{#if LinkUrl}}
+            </a>			
+			{{/if}}
+			{{#if @root.Settings.TextStyle}}
+			 <div class="{{@root.Settings.TextStyle}}">
+				{{#if Title}}
+				<h3 class="{{@root.Settings.TitleTextStyle}}"><span>{{Title}}</span></h3>
+				{{/if}}
+				{{#if Description}}
+				<p class="{{@root.Settings.DescriptionTextStyle}}">{{Description}}</p>
+				{{/if}}
+				{{#if LinkUrl}}
+				<a href="{{LinkUrl}}" {{#if LinkNewWindow}} target="_blank" {{/if}}>{{LinkText}}</a>
+				{{/if}}
+			 </div>
+			 {{/if}}
+		</div>
+		
+	
+	</div>
+	{{/each}}
+		
+</div>
+</div>

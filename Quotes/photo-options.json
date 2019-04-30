@@ -1,0 +1,46 @@
+{
+  "fields": {
+	"Divider": {
+		"type": "checkbox"
+    },
+    "DividerStyle": {
+	 "type": "select",
+	 "optionLabels": [
+		"dividers 1",
+		"dividers 2",
+		"dividers 3",
+		"dividers 4",
+		"dividers 5",
+		"dividers 6",
+		"dividers 7",
+		"dividers 8"	
+	]
+   },
+    "TopPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "BottomPadding": {
+      "type": "select",
+      "optionLabels": [
+        "10px",
+		"20px",
+		"30px",
+        "40px",
+		"50px",
+        "60px"
+      ]
+    },
+    "CssClass": {
+      "type": "text",
+      "helper": "Container Css Class"
+    }	
+  }
+}

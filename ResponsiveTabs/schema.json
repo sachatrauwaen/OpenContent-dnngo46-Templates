@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Tabs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "title": "Title"
+          },
+		   "Icon": {
+            "type": "string",
+            "title": "Icon"
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          },
+		  "LinkOption": {
+			"type": "boolean",
+			"title": "If You want to have link Buttons Below Box!",
+		  },
+		  "LinkNewWindow": {
+			"type": "boolean",
+			"title": "New Window",
+			"dependencies": ["LinkOption"]
+		  }
+        }
+      }
+    }
+  }
+}

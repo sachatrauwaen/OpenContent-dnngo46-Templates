@@ -1,0 +1,36 @@
+{
+  "fields": {
+    "Columns": {
+      "type": "select",
+      "optionLabels": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    "EqualHeight": {
+      "type": "checkbox"
+    },
+    "TopMargin": {
+      "type": "select",
+      "optionLabels": [
+        "20px",
+        "40px",
+        "60px"
+      ]
+    },
+    "BottomMargin": {
+      "type": "select",
+      "optionLabels": [
+        "20px",
+        "40px",
+        "60px"
+      ]
+    },
+    "CssClass": {
+      "type": "text",
+      "helper": "Container Css Class"
+    }
+  }
+}

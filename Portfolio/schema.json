@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "Category": {
+      "type": "array",
+      "title": "Category"
+    },
+    "Title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "Summary": {
+      "type": "string",
+      "title": "Summary"
+    },
+    "Description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "Image": {
+      "type": "string",
+      "title": "Main Image"
+    },
+    "Gallery": {
+      "type": "array",
+      "title": "Image Gallery"
+    },
+    "Documents": {
+      "type": "array",
+      "title": "Documents"
+    },
+    "Seo": {
+      "type": "object",
+      "title": "SEO",
+      "properties": {
+        "Slug": {
+          "type": "string",
+          "title": "Slug"
+        },
+        "MetaTitle": {
+          "type": "string",
+          "title": "Meta Title"
+        },
+        "MetaDescription": {
+          "type": "string",
+          "title": "Meta Description"
+        }
+      }
+    },
+    "Featured": {
+      "type": "boolean",
+      "title": "Featured"
+    },
+    "publishstatus": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "draft",
+        "published"
+      ],
+      "default": "published",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "formfields": [
+    {
+      "fieldname": "show",
+      "title": "Show Description",
+      "fieldtype": "checkbox",
+      "advanced": false
+    }
+  ],
+  "formtype": "object"
+}

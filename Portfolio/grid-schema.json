@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": {
+      "Columns":{
+        "type":"string",
+        "title":"Columns",
+        "enum":["550","362","268"],
+        "required":true
+      
+      } 
+    }
+}

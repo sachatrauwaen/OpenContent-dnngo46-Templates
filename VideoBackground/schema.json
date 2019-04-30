@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "title": "Title"
+          },
+		  "SubTitle": {
+            "type": "string",
+            "title": "Sub Title"
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          },		 
+		  "VideoURL": {
+            "type": "string",
+            "title": "Video Url"
+          },
+		  "Style": {
+			  "type": "string",
+			  "title": "Box Style",
+			  "enum": [
+				"player_boxes",
+				"player_boxes dark"
+			  ]
+		  },
+		  "LinkOption": {
+			"type": "boolean",
+			"title": "If You want to have Link Button 1!"
+		  },
+		   "LinkUrl": {
+			"type": "string",
+			"title": "Button Url 1",
+			"dependencies": ["LinkOption"]
+		  },
+			"LinkText": {
+			"type": "string",
+			"title": "Link Text",
+			"dependencies": ["LinkOption"]
+		  },
+		   "LinkNewWindow": {
+			"type": "boolean",
+			"title": "New Window",
+			"dependencies": ["LinkOption"]
+		  },
+		   "LinkOption2": {
+			"type": "boolean",
+			"title": "If You want to have Link Button 2!"
+		  },
+		   "LinkUrl2": {
+			"type": "string",
+			"title": "Button Url 2",
+			"dependencies": ["LinkOption2"]
+		  },
+			"LinkText2": {
+			"type": "string",
+			"title": "Link Text",
+			"dependencies": ["LinkOption2"]
+		  },
+		   "LinkNewWindow2": {
+			"type": "boolean",
+			"title": "New Window",
+			"dependencies": ["LinkOption2"]
+		  }
+        }
+      }
+    }
+  }
+}  

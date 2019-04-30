@@ -1,0 +1,24 @@
+{
+  "fields": {
+    "items": {
+      "type": "array",
+      "toolbarSticky": true,
+      "items": {
+        "fields": {
+          "title": {
+            "type": "text"
+          },
+          "description": {
+            "type": "text"
+          },
+          "link": {
+            "type": "url"
+          },
+          "icon": {
+            "type": "icon"
+          }
+        }
+      }
+    }
+  }
+}
