@@ -7,7 +7,7 @@ This template pack make it possible to edit the content of most of shortcodes av
 
 **Requirements**
 
-**1\. Requre DNNGO Skin 046**
+**1\. Requre DNNGO Skin SP20064 (046)**
 
 Demo :  [demo7.dnngo.net/20064](http://demo7.dnngo.net/20064)
 
